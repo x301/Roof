@@ -1,7 +1,7 @@
 
 #my-header
 	-ms-grid-columns:  1fr
-	grid-template-rows: 7vh 10vh 70vh 
+	grid-template-rows: 17vh  70vh 
 	-ms-grid-rows: 50px 50px
 	grid-row-gap: 20px 
 	min-height: 100vh
@@ -57,18 +57,20 @@
 	 
 	
 .header-top
-	justify-items: center
-	height: 3em
-	align-items: center
-	grid-template-columns: repeat(4 , minmax(200px,350px))
-	grid-column-gap: 3%
-	position: relative
-	max-width: 85%
-	margin: 0 auto 0 auto
-	z-index: 1
-	.button__simple
-		width: 100%
-        height: 100%
+	grid-template-rows: 300px 100px
+.header__top__information
+	 justify-items: center
+	 height: 3em
+	 align-items: center
+	 grid-template-columns: repeat(4 , minmax(200px,350px)) 
+	 grid-column-gap: 3%
+	 position: relative
+	 max-width: 85%
+	 margin: 0 auto 0 auto
+	 z-index: 1
+	 .button__simple
+		 width: 100%
+         height: 100%
 	
 
 .header__logo
@@ -110,14 +112,15 @@
 	font-family: "Roboto-md" 
 		
 #head-menu
-	height: 75%
-	width: 100%
+	height: 80px
+	width: 100vw
 	background-color: #16a085
 	text-align: center
 	align-content: center
 	z-index: 2
-	transition: .4s
 	color: white
+	
+	
 
 		
 .mm-navbar
