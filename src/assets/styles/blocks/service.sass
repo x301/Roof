@@ -1,0 +1,66 @@
+.service-main
+    min-height: 100vh
+    min-width: 100vw
+    position: relative
+    background: #ecf0f1
+.service-top
+    grid-template-columns: repeat(2,1fr)
+    grid-template-rows: 70px 300px 300px
+    grid-row-gap: 50px
+    align-content: center
+    padding: .5rem
+    padding-top: 1rem
+    position: relative
+    display: inline-block
+    div:nth-child(1)
+        grid-column: 1 / -1
+        text-align: center
+            
+.our-service-top
+    h2
+        font-family: "Roboto-md"
+        font-size: 2rem
+        font-weight: normal
+        
+.our-service-items
+    grid-template-columns: minmax(100px,300px) minmax(150px,300px)
+    grid-template-rows: minmax(50px,185px)
+    padding: 20px $gutter
+    text-align: left 
+    display: inline-block
+    .header
+        font-weight: bold
+        color: $dark
+    div:nth-child(1)
+        grid-column: 1  / 2
+        margin: 0
+    div:nth-child(2)
+        grid-column: 2  / 3
+        margin: 0
+    p
+        margin: 0
+        padding-left: 10px 
+        font-size: 16pt
+        font-family: "Roboto-md"
+        font-weight: normal
+        color: $grey
+        
+.our-service-items-right
+    justify-items: start
+    align-items: start
+    font-size: 18pt
+    font-weight: bold
+.our-service-items-left
+    background-size: cover
+    background-position: center
+    
+
+           
+        
+    
+
+        
+
+
+
+        

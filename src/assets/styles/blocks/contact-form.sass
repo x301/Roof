@@ -1,0 +1,62 @@
+.contact-form
+    grid-template-columns: 1fr 
+    grid-auto-rows: minmax(10px,auto)
+    grid-gap: .5rem 
+    background-color: #ecf0f1
+    min-width: 25rem
+    position: relative
+    font-family: "Roboto-md"
+    border-style: solid
+    border-color: #e67e22
+    border-width: 4px
+    border-radius: 20px
+    font-size: 1.5rem
+    justify-items: center
+    align-items: center
+    margin: 0
+    &__title
+        width: 90%
+        text-align: center
+        color: black
+        padding-top: .5vh
+    &__name
+        width: 90%
+    &__telephone
+        width: 90%
+
+    &__button
+        padding-bottom: 1vh
+        min-width: 200px
+    p
+        margin: 0
+    
+    .contact-form__input_theme-circle
+         width: 90%
+         justify-self: center
+         border-style: solid
+         font-family: "Roboto-md"
+         border-width: 2px
+         max-height: 3.5rem
+         border-radius: 5px
+         border-color: white
+         &:focus
+             border-color: #e67e22
+
+    .button__submit_green
+        width: 90%
+        justify-self: center
+        font-family: "Roboto-md"
+        height: 3rem
+        font-weight: 700
+        color: white
+        text-decoration: none
+        padding: 5px 5px
+        border-radius: 13px
+        background: rgb(64,199,129)
+        box-shadow: 0 -3px rgb(53,167,110) inset
+        transition: 0.2s
+        &:hover
+         background: rgb(53, 167, 110)
+        &:active
+         background: 0 3px rgb(33,147,90) inset
+

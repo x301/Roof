@@ -1,0 +1,81 @@
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+	
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+*:focus
+ outline: none 
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	min-height: 100%
+	font-size: 16px
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1
+	overflow-x: hidden
+	opacity: 1
+
+.grid 
+  display: grid
+  display: -ms-grid
+
+.container
+	max-width: 1200px
+	margin: auto
+
+#m-menu
+	position: fixed
+	top: 0
+	z-index: 
+	background-color: #16a085
+	min-width: 100%
+	height: 38px
+.hamburger
+	padding-top: .5rem
+	.hamburger-box
+		.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+			border-radius: 0
+			width: 33px
+			height: 3px
+			background-color: white
+			
+.sticky
+	position: fixed
+	top: 0
+
+#head-menu.sticky
+	margin-top: 0
+
+
+
+

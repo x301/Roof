@@ -1,0 +1,36 @@
+extends ../clean.layout.pug
+block content
+  section#my-page.grid
+     #m-menu.sticky
+        a#m-icon(href="#my-menu").hamburger.hamburger--collapse
+            span.hamburger-box
+                span.hamburger-inner
+     header#my-header.clean.grid(style="background-image: url(assets/images/clean-1.jpg)")
+         div.header-top.grid
+             div.header-left
+                  img(src='assets/images/Logo-1.png' alt="Логотип")
+             div.header-center.grid
+                 i.phone.fa.fa-phone 
+                     a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05  
+                 i.mphone.fa.fa-mobile    
+                     a.mphone(href="tel:+7 (977) 613-52-02") +7 (977) 613-52-02  
+                 .time
+                     a.time c 9:00 до 22:00
+         div#head-menu.grid
+             include ../common/menu/menu_page-clean/menu
+
+         div.clean__content.grid.content
+             h2.clean__title Очистка крыш от снега и наледи
+             div.clean__content_left
+                 ul.service
+                  li.service__list
+                     i.fa.fa-arrow-right.service__list__item         Очистка крыш и кровли от снега
+                  li.service__item
+                     i.fa.fa-arrow-right.service__list__item         Очистка крыш и кровли от сосулек
+                  li.service__item
+                     i.fa.fa-arrow-right.service__list__item         Очистка крыш и кровли от наледи
+             div.clean__content_right
+                 include ../common/contact-form/contact-form
+             
+              
+     

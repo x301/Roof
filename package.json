@@ -1,0 +1,34 @@
+{
+  "name": "roof",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Sergey Shelyapin",
+  "license": "ISC",
+  "dependencies": {
+    "inputmask": "^4.0.8",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-webpack": "^1.5.0",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  }
+}

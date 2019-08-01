@@ -1,0 +1,14 @@
+extends ../main.layout.pug
+block content
+ include ../common/loader/loader
+ section#my-page.grid
+             #m-menu.sticky
+                 a#m-icon(href="#my-menu").hamburger.hamburger--collapse
+                    span.hamburger-box
+                        span.hamburger-inner
+             include partials/main/header
+             section#my-content
+                 include partials/main/service
+                 include partials/main/work
+                 include partials/main/contacts
+             include ../common/footer

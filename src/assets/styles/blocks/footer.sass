@@ -1,0 +1,64 @@
+#my-footer
+    height: 32vh
+    background-size: cover
+    background-position: center
+    grid-area: footer
+    position: relative
+    grid-row: row3 / row4
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        opacity: .71
+        background: linear-gradient(to left, $green,$light-blue)
+    p
+            margin: 0
+
+.footer-items
+    grid-template-columns: repeat(2,1fr)
+    align-content: center
+    align-items: center
+    z-index: 1
+    font-family: "Roboto-md" 
+    .footer-left
+        color: white
+        font-size: 1.8rem
+        padding: .2rem
+        text-decoration: none
+        justify-self: end
+        
+
+
+    .footer-right
+        justify-self: center
+        p
+            font-size: 2rem
+            padding: .2rem
+            color: white
+            text-align: left
+        ul
+            margin: 0
+            li
+                padding: .4rem
+        a
+         color: white
+         font-size: 1.6rem
+         text-decoration: none
+        i
+          color: white 
+          font-size: 1.7rem
+    hr  
+        height: 0
+        border: 0
+        max-width: 50vw
+        border-bottom: 3px solid white
+          
+	    
+	    
+
+
+    
+    

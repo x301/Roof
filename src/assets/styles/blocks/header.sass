@@ -1,0 +1,161 @@
+@import "button__simple"
+#my-header
+	grid-template-columns:  1fr
+	-ms-grid-columns:  1fr
+	grid-template-rows: 5vh 10vh 70vh 
+	-ms-grid-rows: 50px 50px
+	grid-gap: 50px
+	min-height: 100vh
+	grid-area: header
+	position: relative 
+	background-size: cover
+    background-position: center
+
+.header-content
+	grid-template-columns: 1fr
+	grid-template-rows: 3fr 1fr
+	grid-row-gap: 15px
+	align-content: center
+	max-width: 85%
+	margin: 0 auto 0 auto
+
+.discount
+	background-size: cover
+    background-position: center
+	align-items: center
+	color: white
+	font-size: 16pt
+	justify-items: start
+	.discount__info
+		max-width: 35%
+		margin: 0
+		padding: .7rem
+	p   
+		text-align: left
+		padding: .5rem
+
+.benefits
+  grid-template-columns: repeat(4, 1fr)
+
+.benefits-items
+  position: relative
+  padding: 0
+  grid-template-columns: 100px 1fr
+  text-align: left
+  align-items: center
+  p
+     margin: 0.5em
+     font-size: 16pt
+     font-family: "Roboto-md"
+     color: $grey
+     padding: .5rem
+  img
+     padding: 0.5em
+     margin: 0.5em
+	 
+	
+.header-top
+	height: 3em
+	padding: 4rem 0
+	align-content: center
+	grid-template-columns: repeat(2 , minmax(260px,350px))
+	-ms-grid-columns: (minmax(260px,350px))[2]
+	position: relative
+	margin: auto
+	z-index: 1
+	div:nth-child(1)
+		justify-self: start
+		-ms-grid-column-align: start
+	div:nth-child(2)
+		justify-self: end
+		-ms-grid-column-align: end
+
+.header-left
+	font-size: 1rem
+	font-family: "Roboto-ld" 
+	img
+		max-width: 400px
+
+.header-center
+	font-size: 1em
+	grid-template-rows: repeat(2 , 1fr)
+	-ms-grid-rows: repeat(2 , 1fr)
+	grid-row-gap: 5px
+	letter-spacing: 1px
+	color: $accent
+	align-content: center
+
+.phone
+	justify-self: center
+	font-size: 1.1rem 
+	padding-right: .7em
+	font-family: "Roboto-ld" 
+	color: white
+	text-decoration: none
+	&:before
+		  font-family: "FontAwesome"
+		  font-size: 1.1rem 
+.mphone
+	justify-self: center
+	font-size: 1.1rem 
+	padding-right: .7em
+	font-family: "Roboto-ld" 
+	color: white
+	text-decoration: none
+	&:before
+		  font-family: "FontAwesome"
+		  font-size: 1.5rem 
+
+.time
+	justify-self: start
+	padding-top: .7rem 
+	font-size: 1.1rem 
+	color: white
+	text-decoration: none
+	font-family: "Roboto-ld" 
+		
+#head-menu
+	margin-top: 2rem
+	height: 45px
+	width: 100%
+	background-color: #16a085
+	text-align: center
+	align-content: center
+	z-index: 2
+	transition: .4s
+
+		
+.mm-navbar
+	.mm-navbar__title
+		position: relative
+		padding: 0
+		img
+			max-width: 57vw
+
+.mm-menu_listview-justify .mm-panels > .mm-panel .mm-listview, .mm-panels > .mm-panel_listview-justify .mm-listview
+	display: grid
+	grid-template-columns: 1fr
+	-ms-grid-columns: 1fr
+	grid-template-rows: repeat(5, 1fr)
+	-ms-grid-rows: repeat(5, 1fr)  
+	height: 50%
+	.mm-listitem
+		display: grid
+		text-align: left
+		align-items: center
+		font-size: 1rem
+		font-family: "Roboto-md"
+		color: $dark
+		cursor: pointer
+		a
+			font-family: "Roboto-md"
+			font-size: 1.5rem
+	.mm-listitem:nth-child(1)
+			
+	.mm-listitem:nth-child(2)
+			
+	.mm-listitem:nth-child(3)
+			
+	.mm-listitem:nth-child(4)
+			
+	.mm-listitem:nth-child(5)

@@ -1,0 +1,29 @@
+section.main-contacts.grid#contact_section
+ div.contacts-items.grid.container
+  div.contacts-left.grid
+   form#contact_form
+    h2 Свяжитесь с нами
+    span.required_notification * Обязательные поля для заполнения</span>
+    ul
+     li
+      input(name="name" type="text" placeholder="Имя" required)
+     li
+      input(name="phone" id="input_phone" type="text"  placeholder="Телефон"  maxlength="18" required )
+     li
+      textarea(name="message" type="text" placeholder="Сообщение " cols="40" rows="6" )
+     li
+      button.submit(type="submit") Отправить
+  div.contacts-right.grid
+    h2 Наши контакты
+    ul
+     li
+      span EMAIL
+      a info@moskrovservice.ru
+      hr
+     li
+      span ТЕЛЕФОН
+      a(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05 
+      a(href="tel:+7 (977) 613-52-02") +7 (977) 613-52-02
+      hr  
+      
+  
