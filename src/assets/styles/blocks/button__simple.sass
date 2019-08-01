@@ -1,16 +1,26 @@
 .button__simple
-  width: 45%
-  height: 3rem
-  font-weight: 700
-  color: white
-  text-decoration: none
+  font-weight: 400
+  font-size: 14pt
   padding: 5px 5px
-  border-radius: 3px
-  box-shadow: 0 -3px rgb(53,167,110) inset
+  text-decoration: none
+  border-width: 1px
+  border-radius: 5px
+  border-color:#16a085 
+  box-shadow: 3px -3px #16a085 solid
   transition: 0.2s
-  &:hover
-   background: rgb(53, 167, 110)
-  &:active
-   background: 0 3px rgb(33,147,90) inset
-.button__simple_color_green
-       background: rgb(64,199,129)
+.button__simple_theme_green
+       color: white
+       background: #16a085 
+       &:hover
+         background: rgb(53, 167, 110)
+       &:active
+         background: 0 3px rgb(33,147,90) solid
+.button__simple_theme_white
+       background: white
+       color: #16a085 
+       &:hover
+         background: #16a085
+         color: white
+       &:active
+         background: 0 3px rgb(33,147,90) solid
+

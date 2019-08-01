@@ -1,14 +1,17 @@
 header#my-header.grid
  div.header-top.grid
-  div.header-left
+  div.header__logo
    img(src='assets/images/Logo-1.png' alt="Логотип")
-  div.header-center.grid
-   i.phone.fa.fa-phone 
-     a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05  
-   i.mphone.fa.fa-mobile    
-     a.mphone(href="tel:+7 (977) 613-52-02") +7 (977) 613-52-02  
-   .time
+  div.header__slogan
+   p ЛУчшие решения для вас
+  div.header__phone
+   div
+    i.phone.fa.fa-phone 
+      a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05  
+   div
      a.time c 9:00 до 22:00
+  div.header-back-call
+   button.button__simple.button__simple_theme_white Заказать звонок
  div#head-menu.grid
   include ../../../common/menu/menu_page-main/menu
  div.header-content.grid
@@ -16,7 +19,7 @@ header#my-header.grid
    div.discount__info
      h1 Акция! Выгодное обслуживание
      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam, adipisci et quas ea autem, temporibus amet possimus deserunt vero similique quam fugit quae architecto doloremque, vel dolorum. Tempore, ducimus!
-     button.button__simple.button__simple_color_green Заказать
+     button.button__simple.button__simple_theme_green Заказать
   div.benefits.grid
     div.benefits-items.grid
       img(src='assets/images/item-2.png', alt="Лучшие материалы и лучшая цена")
