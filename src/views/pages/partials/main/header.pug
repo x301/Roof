@@ -1,19 +1,5 @@
 header#my-header.grid
-  div.header__top.grid
-   div.header__top__information.grid
-     div.header__logo
-       img(src='assets/images/Logo-1.png' alt="Логотип")
-     div.header__slogan
-       p ЛУчшие решения для вас
-     div.header__phone
-       i.phone.fa.fa-phone 
-         a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05  
-       div.time
-         a c 9:00 до 22:00
-     div.header-back-call
-       button.button__simple.button__simple_theme_white Заказать звонок
-   div#head-menu.grid
-     include ../../../common/menu/menu_page-main/menu
+  include ../../../common/header__top/header__top
   div.header-content.grid
    div.discount.grid(style="background-image: url(assets/images/clean-1.jpg)" alt="Рабочие герметизируют крышу")
     div.discount__info

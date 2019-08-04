@@ -1,45 +1,46 @@
-ul
-    list-style: none
-    margin: 0
-    padding-left: 0
-    li
-        display: inline-block
-        padding: 0 60px 0 60px
-        border-right: 1px solid
-        border-color: white
-        &:last-child
-            border: none
+#my-menu.grid
+    ul
+     list-style: none
+     margin: 0
+     padding-left: 0
+     li
+         display: inline-block
+         padding: 0 60px 0 60px
+         border-right: 1px solid
+         border-color: white
+         &:last-child
+             border: none
         
-    a 
-       display: block
-       text-decoration: none
-       letter-spacing: 1px
-       font-family: "Roboto-md"
-       position: relative
-       margin: 0 8px 0 8px
-       font-size: 16pt
-       display: block
-       text-decoration: uppercase
-       transition: color .4s
-       color: white
-       &:visited
-           #9d999d
-       &:hover
-           color: #feb386
-           &:after
-               right: 0
-           &:before
-               left: 0
-       &:after,&:before
-           content: ""
-           position: absolute
-           height: 2px
-           top: auto
-           right: 50%
-           bottom: -5px
-           left: 50%
-           background: #feb386
-           transition: .5s
+     a 
+         display: block
+         text-decoration: none
+         letter-spacing: 1px
+         font-family: "Roboto-md"
+         position: relative
+         margin: 0 8px 0 8px
+         font-size: 16pt
+         display: block
+         text-decoration: uppercase
+         transition: color .4s
+         color: white
+         &:visited
+             #9d999d
+         &:hover
+             color: #feb386
+             &:after
+                 right: 0
+             &:before
+                 left: 0
+         &:after,&:before
+             content: ""
+             position: absolute
+             height: 2px
+             top: auto
+             right: 50%
+             bottom: -5px
+             left: 50%
+             background: #feb386
+             transition: .5s
 
 
 
