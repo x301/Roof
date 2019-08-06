@@ -1,14 +1,13 @@
-@import "../blocks/menu__horizontal.sass"
+@import "../blocks/menu__vertical.sass"
 .services
-    grid-template-columns: 15vw 75vw 10vw 
-    grid-template-rows: 13vh 70vh 10vh
-    grid-row-gap: 15px
+    grid-template-columns: 15vw 85vw 
+    grid-template-rows: 18vh 72vh 10vh
     grid-column-gap: 10px
-    grid-template-areas: "head head head" "navbar  main main" "footer footer footer"
+    grid-row-gap: 17px
+    grid-template-areas: "head head" "navbar  main" "footer footer"
     
 .services__header
     grid-area: head
-    background: black
 .services__navbar
     grid-area: navbar
     background: red

@@ -1,14 +1,18 @@
-.header-top
-	grid-template-rows: 300px 100px
+.header__top
+	 grid-template-rows: .7fr 1fr
+	 grid-row-gap: 5px
+	 position: relative
+	 display: block
 .header__top__information
 	 justify-items: center
-	 height: 3em
+	 height: 5em
 	 align-items: center
 	 grid-template-columns: repeat(4 , minmax(200px,350px)) 
 	 grid-column-gap: 3%
 	 position: relative
 	 max-width: 85%
 	 margin: 0 auto 0 auto
+	 color: black
 	 z-index: 1
 	 .button__simple
 		 width: 100%
@@ -24,23 +28,22 @@
 .header__slogan
 	font-size: 1.3em
 	letter-spacing: 1px
-	color: $grey
 	align-content: center
 	font-family: "Roboto-md" 
 
 .header__phone
 	font-size: 1em
 	letter-spacing: 1px
-	color: $accent
 	align-content: center
 	display: block
+	color: black
 
 .phone
 	justify-self: center
 	font-size: 1.1rem 
 	padding-right: .7em
 	font-family: "Roboto-md" 
-	color: $grey
+	color: black
 	text-decoration: none
 	&:before
 		  font-family: "FontAwesome"
@@ -49,7 +52,16 @@
 .time
 	padding-top: .5rem 
 	font-size: 1.1rem 
-	color: $grey
 	text-decoration: none
 	font-family: "Roboto-md" 
 	text-align: center
+
+#head-menu
+	align-self: end
+	height: 80px
+	width: 100vw
+	background-color: #16a085
+	text-align: center
+	align-content: center
+	z-index: 2
+	color: white

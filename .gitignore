@@ -2,3 +2,4 @@ node_modules
 .prettierrc
 .eslintrc
 dist
+yarn-error.log
