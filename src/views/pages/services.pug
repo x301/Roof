@@ -26,26 +26,47 @@ html(lang="ru-RU")
                  div.services__navbar.grid
                      include ../common/menu/menu__vertical/menu__vertical
                  div.services__main.grid
-                     div.services__work
-                         img(src="assets/images/service-2.jpg", alt="")
-                         h3 Наплавляемая кровля
-                         ul
-                             li Ремнот кровли
-                             li Монтаж кровли
-                             li Гидроизоляция
-                     div.services__work
-                         img(src="assets/images/service-2.jpg", alt="")
-                         h3 Черепица
-                         ul
-                             li Металочерепица
-                             li Гибкая черепица
+                     div.services__work.grid
+                         div.sevices__work_left
+                             img(src="assets/images/service-2.jpg", alt="")
+                         div.sevices__work_right
+                             h3 Наплавляемая кровля
+                             ul
+                                 li 
+                                     a(href="") Ремонт кровли
+                                 li
+                                     a(href="") Монтаж кровли
+                                 li
+                                     a(href="") Гидроизоляция
+                     div.services__work.grid
+                         div.sevices__work_left
+                             img(src="assets/images/service-2.jpg", alt="")
+                         div.sevices__work_right
+                             h3 Черепица
+                             ul
+                                 li
+                                     a(href="") Металочерепица
+                                 li
+                                     a(href="") Гибкая черепица
                  
-                     div.services__work
-                         img(src="assets/images/service-2.jpg", alt="")
-                         h3 Напыляемая гидроизоляция
-                     div.services__work
-                         img(src="assets/images/service-2.jpg", alt="")
-                         h3 Уборка снега
+                     div.services__work.grid
+                         div.sevices__work_left
+                             img(src="assets/images/service-2.jpg", alt="")
+                         div.sevices__work_right
+                             h3 Напыляемая кровля
+                             ul
+                                 li
+                                     a(href="") Напыляемая гидроизоляция
+                             p Одной из самых современных и востребованных технологий для защиты конструкций и бесшовной изоляционной облицовке являются полимочевинные (поликарбомидные) покрытия, непревзойденная гибкость которых, делает возможным получение прочных, долговечных и безопасных покрытий.
+                     div.services__work.grid
+                         div.sevices__work_left
+                             img(src="assets/images/service-2.jpg", alt="")
+                         div.sevices__work_right
+                             h3 Уборка снега
+                             ul
+                                 li
+                                     a(href="") Уборка снега с крыш
+                             p Уборка снега с крыш - сезонная услуга. Работа производится силами квалифицированных альпинистов . Уборка кровли от снега, удаление сосулек и наледи выполняется оперативно и качественно.
              div.services__footer.grid
         block scripts
             script(src="assets/scripts/services.bundle.js")

@@ -3,12 +3,13 @@
     grid-template-columns: 100%
     grid-template-rows: 18vh 72vh 10vh
     grid-column-gap: 10px
-    //grid-row-gap: 17px
     grid-template-areas: "head " "content" "footer"
     position: relative
     min-height: 100%
+
 .services__header
     grid-area: head
+
 .services__page-title
     grid-area: title
     font-size: 20pt
@@ -19,37 +20,78 @@
         padding-left: 1em
 .service__content
     grid-area: content
-    grid-template-columns: 20% 80%
+    grid-template-columns: 30% 70%
     grid-template-rows: 12% 88%
-    grid-column-gap: 10px
+    grid-column-gap: 20px
     grid-row-gap: 17px
     grid-template-areas: "title title " "navbar main" 
     width: 85vw
     margin: 0 auto 0 auto
 
-
 .services__navbar
     grid-area: navbar
     //background: #ecf0f1
+
 .services__main
     grid-area: main
     background: #fafafa
     box-shadow: 0 0 1px #bdc3c7
     grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: repeat(2,1fr)
-    grid-gap: 10px
+    grid-template-rows: 34% 66%
+    grid-gap: 30px
     .services__work
         border: 1px solid #bdc3c7
+        grid-template-columns: 1fr 2fr
+        
+        grid-column-gap: 2px
         img
-            display: inline-block
             border-radius: 50% 
             border: 1px solid black
-            width: 100px
-            height: 100px
+            width: 120px
+            height: 120px
             box-shadow: 0 0 5px black
+            margin: 25px
+        h3
+            
+            text-align: left
+            display: block
+            margin-top: 25px
+            font-family: "Roboto-ld"
+            font-size: 18pt
+            a
+                text-align: left
+                display: block
+                margin-top: 25px
+                font-family: "Roboto-ld"
+                font-size: 18pt
+                text-decoration: none
+                color: black
+        p
+            font-family: "Roboto-md"
+            font-size: 14pt
+            letter-spacing: 1.1px
+            text-align: left
+            line-height: 25px
+            padding: 0 2px 0 5px
+                
         ul
             list-style: none
-            display: inline-block
+            display: block
+            margin: 0
+            padding: 0
+            li
+                padding: 5px 0 10px 0
+                border-bottom: 1px solid black
+                overflow: hidden   
+                a
+                    font-family: "Roboto-md"
+                    font-size: 16pt
+                    text-align: left
+                    text-decoration: none
+                    color: #c0392b
+                    &:hover
+                        color: $highlight
+
             
         
 .services__footer
