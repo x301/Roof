@@ -3,6 +3,7 @@
          max-height: 80%
          font-family: "Roboto-md"
          font-size: 16pt
+         margin: 0
          li
              position: relative
              padding: 10px 0 0 0
@@ -15,6 +16,7 @@
              text-align: center
              background: #fafafa
              label 
+                 display: block
                  position: relative
                  display: block
                  padding: 0 2px 0 2px
@@ -23,7 +25,6 @@
                  cursor: pointer
                  background: #fafafa
 
-                 
                  &:hover input:checked~label::after
                      border-top: 0 solid red
                      border-bottom: 4px solid black
@@ -47,26 +48,22 @@
                      background: $green
                      padding-bottom: 0 
                      &::after
-                     border-top: 0 solid black
-                     border-bottom: 4px solid black
-                     transition:border-top .1s, border-bottom .1s .1s
+                         border-top: 0 solid black
+                         border-bottom: 4px solid black
+                         transition:border-top .1s, border-bottom .1s .1s
                      
                  &:checked ~ ul.submenu
-                     max-height: 300px
-                     transition: max-height .5s ease-out
-                     position: relative
                      border-top: 1px solid #ecf0f1
                  
   
              ul.submenu
-                     max-height: 0
+                     display: none
                      padding: 0
                      overflow: hidden
                      list-style-type: none
                      background: #ecf0f1
                      //box-shadow: 0 0 1px rgba(0,0,0,.3)
                      transition: max-height 0.4s ease-out
-                     position: absolute
                      min-width: 100%
                      border: 0px
                      li 

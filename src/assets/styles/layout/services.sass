@@ -1,19 +1,57 @@
 @import "../blocks/menu__vertical.sass"
 .services
-    grid-template-columns: 20vw 79vw 
+    grid-template-columns: 100%
     grid-template-rows: 18vh 72vh 10vh
     grid-column-gap: 10px
-    grid-row-gap: 17px
-    grid-template-areas: "head head" "navbar  main" "footer footer"
-    
+    //grid-row-gap: 17px
+    grid-template-areas: "head " "content" "footer"
+    position: relative
+    min-height: 100%
 .services__header
     grid-area: head
+.services__page-title
+    grid-area: title
+    font-size: 20pt
+    font-family: "Roboto-md"
+    h2 
+        font-weight: 200
+        text-align: left
+        padding-left: 1em
+.service__content
+    grid-area: content
+    grid-template-columns: 20% 80%
+    grid-template-rows: 12% 88%
+    grid-column-gap: 10px
+    grid-row-gap: 17px
+    grid-template-areas: "title title " "navbar main" 
+    width: 85vw
+    margin: 0 auto 0 auto
+
+
 .services__navbar
     grid-area: navbar
     //background: #ecf0f1
 .services__main
     grid-area: main
-    //background: yellow
+    background: #fafafa
+    box-shadow: 0 0 1px #bdc3c7
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2,1fr)
+    grid-gap: 10px
+    .services__work
+        border: 1px solid #bdc3c7
+        img
+            display: inline-block
+            border-radius: 50% 
+            border: 1px solid black
+            width: 100px
+            height: 100px
+            box-shadow: 0 0 5px black
+        ul
+            list-style: none
+            display: inline-block
+            
+        
 .services__footer
     grid-area: footer
     //background: green

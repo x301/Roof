@@ -10,20 +10,20 @@ const config = {
   output: {
     filename: "[name].bundle.js"
   },
-  // optimization: {
-  //  splitChunks: {
-  //   cacheGroups: {
-  //   default: false,
-  //  vendors: {
-  //  filename: "[name].bundle.js"
-  //  },
-  //commons: {
-  // chunks: "all",
-  //  name: "common"
-  // }
-  // }
-  //}
-  // },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        vendors: {
+          filename: "[name].bundle.js"
+        },
+        commons: {
+          chunks: "all",
+          name: "common"
+        }
+      }
+    }
+  },
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
