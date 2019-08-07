@@ -1,17 +1,36 @@
 nav#menu__vertical
-  span.menu__items Мягкая кровля
-       ul
+  ul
+    li
+       input(id="check_1" type="checkbox").menu__items 
+       label(for="check_1") Мягкая кровля
+       ul.submenu
           li
              a(href="") Гидроизоляция
           li
              a(href="") Наплавляемая кровля
-             
-  span.menu__items Черепица
-       ul
+    li
+         input(id="check_2" type="checkbox").menu__items 
+         label(for="check_2") Металочерепица
+         ul.submenu
+            li
+               a(href="") Металочерепица
+            li
+               a(href="") Гибкая черепица
+    li
+       input(id="check_3" type="checkbox").menu__items 
+       label(for="check_3") Напыляемая
+       ul.submenu
           li
-             a(href="") Металочерепица
+             a(href="") Гидроизоляция
           li
-             a(href="") Гибкая черепица
-  span.menu__items Высотные работы
-  span.menu__items Уборка снега
+             a(href="") Наплавляемая кровля
+    li 
+       input(id="check_4" type="checkbox").menu__items 
+       label(for="check_4") Уборка снега
+       ul.submenu
+          li
+             a(href="") Гидроизоляция
+          li
+             a(href="") Наплавляемая кровля
+      
        
