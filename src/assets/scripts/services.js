@@ -2,15 +2,17 @@
 $("#menu__vertical ul > li > .menu ").click(function(e) {
   if (
     $(this)
-      .find("input")
+      .prev("input")
       .prop("checked")
   ) {
     $(this)
-      .find("input")
+      .prev("input")
+
       .attr("checked", false);
   } else {
     $(this)
-      .find("input")
+      .prev("input")
+
       .attr("checked", "checked");
   }
 

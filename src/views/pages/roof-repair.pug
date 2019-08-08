@@ -20,14 +20,40 @@ html(lang="ru-RU")
      div.roof-repair.grid
         div.roof-repair__head
              include ../common/header__top/header__top
-        div.roof-repair__content.grid
+        div.roof-repair__content.grid.container
             div.roof-repai__title.md-title
                  h2 Ремонт кровли
             div.roof-repair__navbar
                  include ../common/menu/menu__vertical/menu__vertical
-            div.roof-repair__main
-
-         
+            div.roof-repair__main.grid
+                 picture
+                    img(src="assets/images/about-1.png", alt="")
+                 header
+                     p Даже качественная кровля со временем нуждается в ремонте и обслуживании. Использовавшиеся ранее технологии возведения не были совершенными, и в процессе эксплуатации могут возникать разные дефекты, устранение которых лучше доверить компетентным специалистам.
+                 div.order.grid
+                     include ../common/service-order/service-order
+                 div.content
+                     h2 Основные виды ремонта
+                     p Текущий ремонт кровли представляет собой замену пришедших в негодность элементов кровли при:
+                             ul
+                                 li появлении протечек
+                                 li повреждении каких-либо элементов крыши
+                                 li снижении звукоизолирующих свойств крыши
+                                 li ухудшении теплоизолирующих характеристик кровли
+                     div.content__items__1.grid
+                         img(src="assets/images/about-1.png", alt="")
+                         div.content__items__1__text
+                             p Капитальный ремонт
+                             br 
+                             p Капитальный ремонт кровли проводится, когда возникает необходимость заменить большую  кровельного покрытия или полностью снять его с последующей укладкой нового ковра. Основной целью ремонта является  ликвидация повреждений и негативных воздействий, к которым они приводят.
+                     div.content__items__2.grid
+                         img(src="assets/images/about-1.png", alt="")
+                         div.content__items__2__text
+                             p Текущий ремонт
+                             br
+                             p Такой ремонт кровли дома и любого другого объекта проводится при длительной эксплуатации конструкций. Безусловно, даже самая надежная поверхность способна разрушаться. Сначала на плоскостях появляются вздутия, пузыри, отверстия, затем они провоцируют протечки. Не допустить этого позволяет своевременная диагностика состояния покрытий и регулярный ремонт. Обычно восстановление требуется проводить каждые 3-5 лет.              
+        div.footer
+             include ../common/footer
      block scripts
             script(src="assets/scripts/services.bundle.js")
             script(src="assets/scripts/common.bundle.js")
