@@ -1,5 +1,5 @@
 //import "./modules/menu__vertical";
-$("#menu__vertical ul > li ").click(function(e) {
+$("#menu__vertical ul > li > .menu ").click(function(e) {
   if (
     $(this)
       .find("input")
@@ -15,7 +15,7 @@ $("#menu__vertical ul > li ").click(function(e) {
   }
 
   $(this)
-    .find(".submenu")
+    .next(".submenu")
     .slideToggle();
   e.preventDefault();
 });
