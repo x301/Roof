@@ -1,0 +1,55 @@
+html(lang="ru-RU")
+    head
+        meta(charset = 'utf-8')
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+        meta(name="description", content="Качественный и быстрый ремонт мягкой кровли в Москве и московской области. Бесплатный замер. ")
+        meta(name="Keywords" content="ремонт мягкой кровли гидроизоляция крыши капитальный ремонт зимнее обслуживание ")
+        meta(name="HandheldFriendly" content="True")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        link(rel="shortcut icon" href="/src/img/favicon/favicon.ico" type="image/x-icon")
+        link(rel="apple-touch-startup-image" href="images/startup.png")
+        link(rel="apple-touch-icon" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/favicon.ico")
+        link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
+        title Ремонт мягкой кровли в Москве и Московской области   
+    body 
+        div.waterproofing-spray.grid
+            div.waterproofing-spray__head
+                 include ../common/header__top/header__top
+            div.waterproofing-spray__content.grid.container
+                 div.waterproofing-spray__title.md-title
+                     h2 Монтаж напыляемой кровли
+                 div.waterproofing-spray__navbar
+                     include ../common/menu/menu__vertical/menu__vertical
+                 div.waterproofing-spray__main.grid
+                     picture
+                         img(src="assets/images/about-1.png", alt="")
+                     header
+                         p Одной из самых современных и востребованных технологий для защиты конструкций и бесшовной изоляционной облицовке являются полимочевинные (поликарбомидные) покрытия, непревзойденная гибкость которых, делает возможным получение прочных, долговечных и безопасных покрытий.
+                     div.order.grid
+                         include ../common/service-order/service-order
+                     div.content
+                         h2 Преимущества напыляемой кровли:
+                         ul
+                             li жидкий материал заполняет все дефекты и трещины поверхности
+                             li высокая адгезия к любому основанию
+                             li простота нанесения на объекты любой формы ( в том числе необычные геометрические конструкции)
+                             li образуется бесшовный слой утеплителя исключающий образование мостиков холода
+                             li не впитывает и не удерживает влагу
+                             li возможность применения в условиях высокой относительной влажности воздуха (до 98%)
+                         div.content__items__1.grid
+                             div.content__items__1__text
+                                 p Особенности монтажа напыляемой кровли
+                                 br
+                                 p При монтаже кровли с помощью жидкого материала необходимо учитывать функциональную нагрузку крыши. От этого зависит количество слоев и толщина нанесения покрытия. Провести все работы правильно могут только профессионалы, поэтому советуем Вам при установке кровельных материалов всегда обращаться за помощью к квалифицированным специалистам.
+                             img(src="assets/images/about-1.png", alt="")
+                         br
+                         p Опытные специалисты компании "МосКровСервис" предоставят полный комплекс необходимых услуг. 
+            div.footer
+                include ../common/footer
+        block scripts
+             script(src="assets/scripts/services.bundle.js")
+             script(src="assets/scripts/common.bundle.js")

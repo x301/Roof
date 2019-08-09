@@ -1,23 +1,23 @@
-.roof-repair
+.roof-waterproofing
     grid-template-rows: 18vh 120vh 10vh
     grid-column-gap: 10px
     grid-row-gap: 20px
     position: relative
         
-    .roof-repair__content
+    .roof-waterproofing__content
         grid-template-columns: 30% 70%
         grid-template-rows: 9% 88%
         grid-column-gap: 20px
         grid-row-gap: 2px
         grid-template-areas: "title title" "navbar main"
 
-    .roof-repair__title
+    .roof-waterproofing__title
         grid-area: title
 
-    .roof-repair__navbar
+    .roof-waterproofing__navbar
         grid-area: navbar
 
-    .roof-repair__main
+    .roof-waterproofing__main
         grid-area: main
         grid-template-columns: 25% 65%
         grid-template-rows: 20% 11% 55%
@@ -49,8 +49,9 @@
         .content
             grid-area: content
             img
-                max-width: 80%
-                max-height: 80%
+                max-width: 100%
+                max-height: 100%
+                margin: auto
                 
             p
                 font-size: 14pt
@@ -65,28 +66,11 @@
                     color: grey
                     padding: 5px
             .content__items__1
-                grid-template-columns: 30% 70%
+                grid-template-columns: 60% 30%
+                grid-template-rows: 1fr
                 grid-gap: 10px
                 padding-top: 30px
                 .content__items__1__text
-                    grid-column: 2/3
-                img
                     grid-column: 1/2
-                    
-            .content__items__2
-                grid-template-columns: 70% 30%
-                grid-gap: 10px
-                padding-top: 30px
                 img
                     grid-column: 2/3
-                    grid-row: 1/2
-                .content__items__2__text
-                    grid-column: 1/2
-                    grid-row: 1/2
-                
-
-                
-
-               
-
-        

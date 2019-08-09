@@ -1,0 +1,51 @@
+html(lang="ru-RU")
+    head
+        meta(charset = 'utf-8')
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+        meta(name="description", content="Качественный и быстрый ремонт мягкой кровли в Москве и московской области. Бесплатный замер. ")
+        meta(name="Keywords" content="ремонт мягкой кровли гидроизоляция крыши капитальный ремонт зимнее обслуживание ")
+        meta(name="HandheldFriendly" content="True")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        link(rel="shortcut icon" href="/src/img/favicon/favicon.ico" type="image/x-icon")
+        link(rel="apple-touch-startup-image" href="images/startup.png")
+        link(rel="apple-touch-icon" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/favicon.ico")
+        link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
+        title Ремонт мягкой кровли в Москве и Московской области   
+    body 
+        div.roof-mount.grid
+            div.roof-mount__head
+                 include ../common/header__top/header__top
+            div.roof-mount__content.grid.container
+                 div.roof-mount__title.md-title
+                     h2 Монтаж наплавляемой кровли
+                 div.roof-mount__navbar
+                     include ../common/menu/menu__vertical/menu__vertical
+                 div.roof-mount__main.grid
+                     picture
+                         img(src="assets/images/about-1.png", alt="")
+                     header
+                         p Компания «МосКровСервис» предлагает услугу монтажа наплавляемой кровли. Этот тип покрытия подразумевает расплавление нижнего битумного слоя материала для надежного и быстрого сцепления с основанием крыши. Наши специалисты работают со специальными кровельными горелкамию.
+                     div.order.grid
+                         include ../common/service-order/service-order
+                     div.content
+                         h2 Преимущества наплавляемой кровли:
+                         ul
+                             li материал устойчив к гниению
+                             li рулонные покрытия устойчивы к ультрафиолету, климатическим воздействиям, температурным перепадам
+                             li отличные показатели паро- и водонепроницаемости позволяют использовать полотна для устройства изоляционного слоя
+                             li такое покрытие отличается длительным сроком службы
+                         div.content__items__1.grid
+                             div.content__items__1__text
+                                 p Особенности монтажа наплавляемой кровли
+                                 br
+                                 p Перед началом работ производятся замеры крыши, затем рассчитывается необходимое количество материала. Обязательно выполняется предварительная подготовка основания, на которое выполняется укладка полотна. Требуется строго соблюдать технологию монтажа наплавляемой кровли и контролировать качество всех процессов, чтобы избежать появления дефектов в дальнейшем. Монтаж наплавляемой кровли осуществляется в любое время года, для этого используется специальное оборудование.
+                             img(src="assets/images/about-1.png", alt="")
+            div.footer
+                include ../common/footer
+        block scripts
+             script(src="assets/scripts/services.bundle.js")
+             script(src="assets/scripts/common.bundle.js")

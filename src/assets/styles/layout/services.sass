@@ -1,7 +1,7 @@
 @import "../blocks/menu__vertical.sass"
 .services
     grid-template-columns: 100%
-    grid-template-rows: 18vh 72vh 10vh
+    grid-template-rows: 18vh 95vh 10vh
     grid-column-gap: 10px
     grid-template-areas: "head " "content" "footer"
     position: relative
@@ -37,13 +37,18 @@
     background: #fafafa
     box-shadow: 0 0 1px #bdc3c7
     grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: 34% 66%
+    grid-template-rows: 1fr 1fr
     grid-gap: 30px
     .services__work
         border: 1px solid #bdc3c7
         grid-template-columns: 1fr 2fr
-        
+        grid-template-rows: 50% 50%
         grid-column-gap: 2px
+        .sevices__work_left 
+            grid-row: 1/2
+        .sevices__work_right
+            grid-row: 1/2   
+
         img
             border-radius: 50% 
             border: 1px solid black
@@ -72,7 +77,11 @@
             letter-spacing: 1.1px
             text-align: left
             line-height: 25px
-            padding: 0 2px 0 5px
+            padding: 15px
+            grid-row: 2/3
+            grid-column: 1/-1
+            margin: 0
+            
                 
         ul
             list-style: none
