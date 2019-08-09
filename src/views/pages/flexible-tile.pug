@@ -1,0 +1,64 @@
+html(lang="ru-RU")
+    head
+        meta(charset = 'utf-8')
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+        meta(name="description", content="Качественный и быстрый ремонт мягкой кровли в Москве и московской области. Бесплатный замер. ")
+        meta(name="Keywords" content="ремонт мягкой кровли гидроизоляция крыши капитальный ремонт зимнее обслуживание ")
+        meta(name="HandheldFriendly" content="True")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        link(rel="shortcut icon" href="/src/img/favicon/favicon.ico" type="image/x-icon")
+        link(rel="apple-touch-startup-image" href="images/startup.png")
+        link(rel="apple-touch-icon" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/favicon.ico")
+        link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
+        title Ремонт мягкой кровли в Москве и Московской области   
+    body 
+        div.flexible-tile.grid
+            div.flexible-tile__head
+                 include ../common/header__top/header__top
+            div.flexible-tile__content.grid.container
+                 div.flexible-tile__title.md-title
+                     h2 Гибкая черепица
+                 div.flexible-tile__navbar
+                     include ../common/menu/menu__vertical/menu__vertical
+                 div.flexible-tile__main.grid
+                     picture
+                         img(src="assets/images/about-1.png", alt="")
+                     header
+                         p Кровля из гибкой черепицы - это самая популярная разновидность мягкой кровли. Ещё этот вид кровельного покрытия называют битумной черепицей, поскольку она производится из модифицированного или окисленного битума.
+                     div.order.grid
+                         include ../common/service-order/service-order
+                     div.content
+                         h2 Преимущества гибкой черепицы:
+                         ul
+                             li возможности по созданию крыш самых сложных конструкций не ограничены (купола, скаты, множество углов, луковичные формы и т.п.).
+                             li широкая цветовая гамма.
+                             li обеспечивает звукоизоляцию на высшем уровне
+                             li в случае надобности можно заменить отдельный участок, а не перестилать всю крышу
+                             li стойкость к ультрафиолету
+                             li простая и надежная система укладки
+                             li отличная устойчивость к разнообразным повреждениям
+                             li относительно небольшой вес
+                         h2 Применение гибкой черепицы
+                         div.content__items__1.grid
+                             div.content__items__1__text
+                                 p Стоит отметить, что устройство мягкой кровли наиболее целесообразно на сложных крышах, уклон которых составляет более 10°. Как правило, необходимо использование специального подкладочного ковра. Удобство использования гибкой черепицы заключается в том, что максимальный угол уклона поверхности не ограничен, и черепица может укладываться даже на вертикальные участки.
+                             img(src="assets/images/about-1.png", alt="")
+                         div.content__items__2.grid
+                             div.content__items__2__text
+                                 h2 Особенности монтажа 
+                                 br
+                                 p Гибкую черепицу можно укладывать на крыши любой, даже самой сложной, конфигурации. Экономичность подобного материала проявляется не только в его низкой цене. Укладка гибкой черепицы не сопровождается необходимостью усиления стропильной конструкции или фундамента здания, что обусловлено незначительным весом материала. Экономичность гибкой черепицы проявляется также в том, что для ее монтажа практически не требуется дополнительных аксессуаров, а также в небольшом количестве отходов при раскрое материала. Еще один плюс использования гибкой черепицы – отсутствие необходимости в покраске, так как покрытие материала является устойчивым к воздействию ультрафиолета. Незначительный вес битумной черепицы существенно облегчает работы по ее транспортировке и погрузочно-разгрузочные работы, а также доставку материала на крышу здания. 
+                         div.content__items__3.grid
+                             div.content__items__3__text
+                                 p Обобщая все вышесказанное, можно с уверенностью утверждать, что мягкая черепица - это отличный способ защитить крышу вашего дома и создать ощущение уюта, тепла в любую непогоду. А экологичность данного материала и легкие способы монтажа помогут сохранить от постоянных шумов больших мегаполисов ваше спокойствие и нервы.
+                             
+            
+            div.footer
+                include ../common/footer
+        block scripts
+             script(src="assets/scripts/services.bundle.js")
+             script(src="assets/scripts/common.bundle.js")

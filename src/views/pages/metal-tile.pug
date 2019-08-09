@@ -1,0 +1,61 @@
+html(lang="ru-RU")
+    head
+        meta(charset = 'utf-8')
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+        meta(name="description", content="Качественный и быстрый ремонт мягкой кровли в Москве и московской области. Бесплатный замер. ")
+        meta(name="Keywords" content="ремонт мягкой кровли гидроизоляция крыши капитальный ремонт зимнее обслуживание ")
+        meta(name="HandheldFriendly" content="True")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        link(rel="shortcut icon" href="/src/img/favicon/favicon.ico" type="image/x-icon")
+        link(rel="apple-touch-startup-image" href="images/startup.png")
+        link(rel="apple-touch-icon" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/favicon.ico")
+        link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
+        title Ремонт мягкой кровли в Москве и Московской области   
+    body 
+        div.metal-tile.grid
+            div.metal-tile__head
+                 include ../common/header__top/header__top
+            div.metal-tile__content.grid.container
+                 div.metal-tile__title.md-title
+                     h2 Металочерепица
+                 div.metal-tile__navbar
+                     include ../common/menu/menu__vertical/menu__vertical
+                 div.metal-tile__main.grid
+                     picture
+                         img(src="assets/images/about-1.png", alt="")
+                     header
+                         p Металлочерепица - это наиболее распространенный кровельный материал для покрытия крыши в малоэтажном строительстве. Она встречается сегодня чаще других, благодаря таким качествам, как относительно невысокая цена и легкость установки. Конструкция имеет небольшой вес, что также в самом прямом смысле влияет на ее окончательную стоимость.
+                     div.order.grid
+                         include ../common/service-order/service-order
+                     div.content
+                         h2 Преимущества металочерепицы:
+                         ul
+                             li возможность использования в любых климатических условиях
+                             li негорючесть, пожарная безопасность
+                             li устойчивость к коррозионным процессам
+                             li привлекательный внешний вид благодаря наличию полимерного покрытия
+                             li способность выдерживать механические воздействия
+                             li стойкость к ультрафиолету
+                             li приемлемая стоимость стройматериала.
+                         div.content__items__1.grid
+                             div.content__items__1__text
+                                 h2.md-title Особенности металочерепицы
+                                 br
+                                 p Металлочерепица ­ сравнительно доступный по стоимости кровельный материал. Листы металлочерепицы укладываются на обрешетку, которая по причине малого веса материала не нуждается в усилении. 
+                                 p Обустройство кровли с использованием металлочерепицы желательно доверять профессионалам. Мастера знают все нюансы выполнения подобной работы. 
+                             img(src="assets/images/about-1.png", alt="")
+                         div.content__items__2.grid
+                             div.content__items__2__text
+                                 p Стоимость монтажа зависит от различных факторов: общей площади крыши и ее геометрических особенностей, времени года, толщины материала и т. д. Стоимость, по сравнению с битумной или натуральной черепицей, конструкция из металла обойдется вам на порядок ниже. Нужно также учитывать, что срок ее эксплуатации напрямую зависит не только от качества самих материалов, но и от того, насколько качественно и профессионально ее монтируют. Оптимальная цена, долговечность, надежная защита от внешних воздействий, привлекательный внешний вид делают металлочерепицу одним из лидеров в сегменте кровельных материалов. 
+                             
+                         br
+                         p Опытные специалисты компании "МосКровСервис" предоставят полный комплекс необходимых услуг. 
+            div.footer
+                include ../common/footer
+        block scripts
+             script(src="assets/scripts/services.bundle.js")
+             script(src="assets/scripts/common.bundle.js")

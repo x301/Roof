@@ -1,27 +1,27 @@
-.waterproofing-spray
-    grid-template-rows: 18vh 98vh 10vh
+.clean
+    grid-template-rows: 18vh 240vh 10vh
     grid-column-gap: 10px
-    grid-row-gap: 20px
+    grid-row-gap: 30px
     position: relative
         
-    .waterproofing-spray__content
+    .clean__content
         grid-template-columns: 30% 70%
-        grid-template-rows: 8% 90%
+        grid-template-rows: 3% 95%
         grid-column-gap: 20px
         grid-row-gap: 2px
         grid-template-areas: "title title" "navbar main"
 
-    .waterproofing-spray__title
+    .clean__title
         grid-area: title
         align-self: center
 
-    .waterproofing-spray__navbar
+    .clean__navbar
         grid-area: navbar
 
-    .waterproofing-spray__main
+    .clean__main
         grid-area: main
         grid-template-columns: 25% 65%
-        grid-template-rows: 20% 11% 55%
+        grid-template-rows: 8% 5% 80%
         grid-template-areas: "img header" "order order" "content content"
         grid-column-gap: 20px
         grid-row-gap: 20px
@@ -79,3 +79,25 @@
                 img
                     grid-column: 1/2
                     grid-row: 1/2
+            .content__items__2
+                grid-template-columns: 30% 60%
+                grid-template-rows: 1fr
+                grid-gap: 10px
+                padding-top: 30px
+                .content__items__2__text
+                    grid-column: 1/-1
+                    grid-row: 1/2
+            .content__items__3
+                grid-template-columns: 60% 30%
+                grid-template-rows: 1fr
+                grid-gap: 10px
+                padding-top: 30px
+                .content__items__3__text
+                    grid-column: 1/2
+                    grid-row: 1/2
+                img
+                    grid-column: 2/3
+                    grid-row: 1/2
+            
+                
+                

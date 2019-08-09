@@ -1,24 +1,25 @@
-.waterproofing-spray
-    grid-template-rows: 18vh 98vh 10vh
+.metal-tile
+    grid-template-rows: 18vh 133vh 10vh
     grid-column-gap: 10px
     grid-row-gap: 20px
     position: relative
         
-    .waterproofing-spray__content
+    .metal-tile__content
         grid-template-columns: 30% 70%
-        grid-template-rows: 8% 90%
+        grid-template-rows: 5% 90%
         grid-column-gap: 20px
         grid-row-gap: 2px
         grid-template-areas: "title title" "navbar main"
 
-    .waterproofing-spray__title
+    .metal-tile__title
         grid-area: title
         align-self: center
+        
 
-    .waterproofing-spray__navbar
+    .metal-tile__navbar
         grid-area: navbar
 
-    .waterproofing-spray__main
+    .metal-tile__main
         grid-area: main
         grid-template-columns: 25% 65%
         grid-template-rows: 20% 11% 55%
@@ -66,8 +67,6 @@
                     font-family: "Roboto-md"
                     color: grey
                     padding: 5px
-            h2
-                    margin: 0
             .content__items__1
                 grid-template-columns: 30% 60%
                 grid-template-rows: 1fr
@@ -75,6 +74,19 @@
                 padding-top: 30px
                 .content__items__1__text
                     grid-column: 2/3
+                    grid-row: 1/2
+                img
+                    grid-column: 1/2
+                    grid-row: 1/2
+                h2
+                    margin: 0
+            .content__items__2
+                grid-template-columns: 30% 60%
+                grid-template-rows: 1fr
+                grid-gap: 10px
+                padding-top: 30px
+                .content__items__2__text
+                    grid-column: 1/3
                     grid-row: 1/2
                 img
                     grid-column: 1/2

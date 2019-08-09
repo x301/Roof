@@ -1,36 +1,86 @@
-extends ../clean.layout.pug
-block content
-  section#my-page.grid
-     #m-menu.sticky
-        a#m-icon(href="#my-menu").hamburger.hamburger--collapse
-            span.hamburger-box
-                span.hamburger-inner
-     header#my-header.clean.grid(style="background-image: url(assets/images/clean-1.jpg)")
-         div.header-top.grid
-             div.header-left
-                  img(src='assets/images/Logo-1.png' alt="Логотип")
-             div.header-center.grid
-                 i.phone.fa.fa-phone 
-                     a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05  
-                 i.mphone.fa.fa-mobile    
-                     a.mphone(href="tel:+7 (977) 613-52-02") +7 (977) 613-52-02  
-                 .time
-                     a.time c 9:00 до 22:00
-         div#head-menu.grid
-             include ../common/menu/menu_page-clean/menu
-
-         div.clean__content.grid.content
-             h2.clean__title Очистка крыш от снега и наледи
-             div.clean__content_left
-                 ul.service
-                  li.service__list
-                     i.fa.fa-arrow-right.service__list__item         Очистка крыш и кровли от снега
-                  li.service__item
-                     i.fa.fa-arrow-right.service__list__item         Очистка крыш и кровли от сосулек
-                  li.service__item
-                     i.fa.fa-arrow-right.service__list__item         Очистка крыш и кровли от наледи
-             div.clean__content_right
-                 include ../common/contact-form/contact-form
-             
-              
-     
+html(lang="ru-RU")
+    head
+        meta(charset = 'utf-8')
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+        meta(name="description", content="Качественный и быстрый ремонт мягкой кровли в Москве и московской области. Бесплатный замер. ")
+        meta(name="Keywords" content="ремонт мягкой кровли гидроизоляция крыши капитальный ремонт зимнее обслуживание ")
+        meta(name="HandheldFriendly" content="True")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        link(rel="shortcut icon" href="/src/img/favicon/favicon.ico" type="image/x-icon")
+        link(rel="apple-touch-startup-image" href="images/startup.png")
+        link(rel="apple-touch-icon" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/favicon.ico")
+        link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
+        title Ремонт мягкой кровли в Москве и Московской области   
+    body 
+        div.clean.grid
+            div.clean__head
+                 include ../common/header__top/header__top
+            div.clean__content.grid.container
+                 div.clean__title.md-title
+                     h2 Уборка снега
+                 div.clean__navbar
+                     include ../common/menu/menu__vertical/menu__vertical
+                 div.clean__main.grid
+                     picture
+                         img(src="assets/images/about-1.png", alt="")
+                     header
+                         p Уборка снега с крыш - сезонная услуга. Работа производится силами квалифицированных альпинистов . Уборка кровли от снега, удаление сосулек и наледи выполняется оперативно и качественно
+                     div.order.grid
+                         include ../common/service-order/service-order
+                     div.content
+                         h2 Специфика уборки жесткой кровли от снега
+                         br
+                         p Покрытая снегом жесткая кровля зимой может дать течь вследствие затрудненного оттока воды по водостокам. Крыша из жести имеет множество стыков, герметичность которых может быть нарушена. Для сохранности здания и в целях обеспечения безопасности людей, проходящих вблизи сооружения, необходимо своевременно очищать горизонтальные поверхности от снега и сосулек. Уборка скатных крыш связана с определенным риском, поэтому используется метод промышленного альпинизма.
+                         br
+                         p Подготовленные специалисты проведут качественную очистку кровли любой конфигурации, включая самые сложные. При работе используются пластиковые лопаты и специальное страховочное снаряжение. Уборка снега с кровли требует профессионализма, поэтому нами используются специальные составы, предотвращающие обледенение крыш, а также осуществляется вывоз снега на собственной технике.
+                         div.content__items__1.grid
+                             div.content__items__1__text
+                                 h2 Почему необходима очистка кровли от снега?
+                                 br
+                                 p Если снега на крыше накапливается слишком много это может стать причиной возникновения трещин, повреждения покрытий кровли, поэтому эта проблема касается многих руководителей и хозяев предприятий.
+                             img(src="assets/images/about-1.png", alt="")
+                         div.content__items__2.grid
+                             div.content__items__2__text
+                                 p Конечно же, можно воспользоваться услугами дворников, но они не всегда соблюдают технику безопасности, и их работа не будет столь эффективной как у профессионалов. Кроме того, многие современные здания имеют крыши со сложной конструкцией, поэтому очистка кровли от снега в разы усложняется, и помочь смогут только профессионалы. Мы может предложить вам провести одноразовую чистку, или же предоставить более выгодное - абонентское обслуживание (иногда за ночь выпадает месячная норма осадков, и одноразовой чисткой за всю зиму точно не обойтись).
+                         div.content__items__3.grid
+                             div.content__items__3__text
+                                 p Появление толстых слоев снега на кровле – это реальная угроза не только для кровли, но и прохожих, припаркованных автомобилей, и.т.п. Особенно опасными являются сосульки, которые могут отвалиться в любой момент
+                                 br
+                                 p Удалять снег, лед с крыши, не имея опыта и специального оборудования очень опасно для жизни, трудоемко и малоэффективно. Если воспользоваться электро подогревом крыши, это будет слишком дорого, кроме того, установить такое оборудование не везде можно.
+                             img(src="assets/images/about-1.png", alt="")
+                         div.content__items__2.grid
+                             div.content__items__2__text
+                                 p Справиться с проблемой вам помогут промышленные альпинисты, которые предоставляют услугу - очистка кровли от снега, льда или сосулек. Это наиболее экономичный, эффективный и оперативный метод очистки крыши даже в самых высоких зданиях. Воспользоваться такой услугой можно у нас. Работающие в нашей компании промальпы качественно и без угрозы жизни других людей уберут снег, удалят сосульки на любых зданиях, будь то обычный жилой дом, или высотный торговый комплекс
+                         div.content__items__3.grid
+                             div.content__items__3__text
+                                 h2 К ценообразующим факторам относятся:
+                                 ul
+                                     li периодичность
+                                     li общая площадь кровли
+                                     li архитектурные особенности крыши
+                                     li тип кровли
+                             img(src="assets/images/about-1.png", alt="")
+                         div.content__items__2.grid
+                             div.content__items__2__text
+                                 h2 Подготовка к зимнему и летнему периоду кровель
+                                 br 
+                                 p Подготовка к зимнему периоду включает в себя:
+                                 ul
+                                    li Закрытие воронок водостоков «заглушками» необходимо для предотвращения попадания осадков в водосток и для предотвращения образования льда в нем, что может привести к разрушению конструкции водостока.
+                                    li Прочистка водосточных желобов от листвы и прочего мусора, необходимо для правильной очистки крыш от снега и наледи т.к. наличие мусора может повлечь за собой поломку желобов во время очистки кровель и не позволит обеспечить должное качество работ/услуг.
+                                 p Подготовка к летнему периоду включает в себя:
+                                 ul
+                                    li Снятие «заглушек» с воронок водостоков и их регулировка в нужное положение (при необходимости устанавливаются дополнительные крепления) При образовании наледи и налипании снега воронки смещаются и происходит, перелив через них дождевой воды в летний период
+                                    li Восстановление отливов водостоков и водосточных желобов. При производстве работ неизбежно происходит смещение и деформация, для обеспечения правильной работы водосточной системы необходимо проводить работы по ее регулировке и восстановлению.
+                                 p Данные работы необходимо проводить после каждой зимы, вне зависимости проводились ли работы по очистке от снега и льда лили нет. В противном случае происходит скопление воды на кровле, попадание воды на фасад здания, что приводит к разрушениям и плохому внешнему виду зданий.
+                            
+            
+            div.footer
+                include ../common/footer
+        block scripts
+             script(src="assets/scripts/services.bundle.js")
+             script(src="assets/scripts/common.bundle.js")
