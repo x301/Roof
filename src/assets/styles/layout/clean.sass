@@ -1,24 +1,24 @@
-.flexible-tile
-    grid-template-rows: 18vh 150vh 10vh
+.clean
+    grid-template-rows: 18vh 250vh 10vh
     grid-column-gap: 10px
     grid-row-gap: 20px
     position: relative
         
-    .flexible-tile__content
+    .clean__content
         grid-template-columns: 30% 70%
-        grid-template-rows: 5% 90%
+        grid-template-rows: 60px 1500px
         grid-column-gap: 20px
         grid-row-gap: 2px
         grid-template-areas: "title title" "navbar main"
 
-    .flexible-tile__title
+    .clean__title
         grid-area: title
         align-self: center
 
-    .flexible-tile__navbar
+    .clean__navbar
         grid-area: navbar
 
-    .flexible-tile__main
+    .clean__main
         grid-area: main
         grid-template-columns: 25% 65%
         grid-template-rows: 13% 11% 55%
@@ -88,12 +88,15 @@
                     grid-column: 1/-1
                     grid-row: 1/2
             .content__items__3
-                grid-template-columns: 1fr
+                grid-template-columns: 60% 30%
                 grid-template-rows: 1fr
                 grid-gap: 10px
                 padding-top: 30px
                 .content__items__3__text
-                    grid-column: 1/-1
+                    grid-column: 1/2
                     grid-row: 1/2
-                
+                img
+                    grid-column: 2/3
+                    grid-row: 1/2
+@import "../_media"                
                 

@@ -1,18 +1,19 @@
 .roof-mount
-    grid-template-rows: 18vh 120vh 10vh
+    grid-template-rows: 18vh 90vh 10vh
     grid-column-gap: 10px
     grid-row-gap: 20px
     position: relative
         
     .roof-mount__content
         grid-template-columns: 30% 70%
-        grid-template-rows: 9% 88%
+        grid-template-rows: 60px 700px
         grid-column-gap: 20px
         grid-row-gap: 2px
         grid-template-areas: "title title" "navbar main"
 
     .roof-mount__title
         grid-area: title
+        align-self: center
 
     .roof-mount__navbar
         grid-area: navbar
@@ -76,5 +77,5 @@
                     grid-column: 1/2
                 img
                     grid-column: 2/3
-                   
+@import "../_media"                   
                 

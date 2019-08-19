@@ -1,7 +1,7 @@
 @import "../blocks/menu__vertical.sass"
 .services
     grid-template-columns: 100%
-    grid-template-rows: 18vh 95vh 10vh
+    grid-template-rows: 18vh 85vh 10vh
     grid-column-gap: 10px
     grid-template-areas: "head " "content" "footer"
     position: relative
@@ -12,18 +12,13 @@
 
 .services__page-title
     grid-area: title
-    font-size: 20pt
-    font-family: "Roboto-md"
-    h2 
-        font-weight: 200
-        text-align: left
-        padding-left: 1em
+    
 .service__content
     grid-area: content
     grid-template-columns: 30% 70%
-    grid-template-rows: 12% 88%
+    grid-template-rows: 60px 700px
     grid-column-gap: 20px
-    grid-row-gap: 17px
+    grid-row-gap: 20px
     grid-template-areas: "title title " "navbar main" 
     width: 85vw
     margin: 0 auto 0 auto
@@ -100,9 +95,9 @@
                     color: #c0392b
                     &:hover
                         color: $highlight
-
-            
-        
+    
 .services__footer
     grid-area: footer
     //background: green
+
+@import "../_media"
