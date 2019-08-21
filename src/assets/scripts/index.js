@@ -46,26 +46,6 @@ $("body").on("click", 'a[href^="#/"]', function() {
   return false;
 });
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-  mySticky();
-};
-
-// Get the navbar
-var navbar = document.getElementById("head-menu");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function mySticky() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
 $(window).on("load", function() {
   $(".loaderArea")
     .find("sk-fading-circle")
