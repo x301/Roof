@@ -1,0 +1,27 @@
+extends ../main.layout.pug
+block content
+    section.projects
+        include ../common/header__top/header__top
+        div.projects__content.container
+            h2.md-title Проекты
+            div.projects__content__gallery
+                ul.img__list
+                    li
+                        a(href="assets/images/projects/img-1-lg.jpg")
+                            img(src="assets/images/projects/img-1-sm.jpg", alt="")
+                    li
+                        a(href="assets/images/projects/img-2-lg.jpg")
+                            img(src="assets/images/projects/img-2-sm.jpg", alt="")
+                    li
+                        a(href="assets/images/projects/img-3-lg.jpg")
+                            img(src="assets/images/projects/img-3-sm.jpg", alt="")
+                    li
+                        a(href="assets/images/projects/img-4-lg.jpg")
+                            img(src="assets/images/projects/img-4-sm.jpg", alt="")
+            div.img__lightbox
+                div.overlay
+                figure
+                    span.prev ← предыдущая
+                    span.next следующая →
+                    img(src="#", alt="")
+        include ../common/footer
