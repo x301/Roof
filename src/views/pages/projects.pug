@@ -1,7 +1,8 @@
 extends ../main.layout.pug
 block content
-    section.projects
-        include ../common/header__top/header__top
+    section.projects.grid
+        div.projects__header
+             include ../common/header__top/header__top
         div.projects__content.container
             h2.md-title Проекты
             div.projects__content__gallery
@@ -18,13 +19,20 @@ block content
                     li
                         a(href="assets/images/projects/img-4-lg.jpg")
                             img(src="assets/images/projects/img-4-sm.jpg", alt="")
+                    li
+                        a(href="assets/images/projects/img-4-lg.jpg")
+                            img(src="assets/images/projects/img-4-sm.jpg", alt="")
+                    li
+                        a(href="assets/images/projects/img-4-lg.jpg")
+                            img(src="assets/images/projects/img-4-sm.jpg", alt="")
+                    li
+                        a(href="assets/images/projects/img-4-lg.jpg")
+                            img(src="assets/images/projects/img-4-sm.jpg", alt="")
             div.img__lightbox
                 div.overlay
+                span.prev ← 
                 figure
-                    span.prev ← предыдущая
-                    span.next следующая →
                     img(src="#", alt="")
-        include ../common/footer
-     block scripts
-         script(src="assets/scripts/services.bundle.js")
-         script(src="assets/scripts/common.bundle.js")
+                span.next  →
+        div.projects__footer
+             include ../common/footer

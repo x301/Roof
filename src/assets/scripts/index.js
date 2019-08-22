@@ -3,6 +3,7 @@ import "../libs/fullpage/fullpage.js";
 import "../libs/jQuery.mmenu-master/dist/addons/pagescroll/jquery.mmenu.pagescroll.js";
 import "../libs/jQuery.mmenu-master/dist/addons/fixedelements/jquery.mmenu.fixedelements.js";
 import "inputmask/dist/min/jquery.inputmask.bundle.min";
+import "./modules/gallery.js";
 
 var $menu = $("#my-menu").mmenu(
   {
