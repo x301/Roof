@@ -9,6 +9,7 @@
     "eslint-plugin-import": "^2.18.2",
     "inputmask": "^4.0.8",
     "jquery": "^3.4.1",
+    "fancybox": "^3.0.1",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
