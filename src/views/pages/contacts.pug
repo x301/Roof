@@ -1,0 +1,36 @@
+extends ../main.layout.pug
+block content
+    section.contacts.grid
+        div.contacts__header
+             include ../common/header__top/header__top
+        div.contacts__content.container.grid
+            div.contacts__content__feeedback__left
+                 h2.mt-title Свяжитесь с нами
+                 p Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение
+            div.contacts__content__feeedback__center.grid
+                 div.feedback__block__input
+                      input(name="name" id="input__name" type="text"  required).input-text
+                      label(for="input__name")
+                            span Ваше имя:
+                 div.feedback__block__input
+                      input(name="name" type="text" id="input__phone"  required).input-text
+                      label(for="input__phone")
+                            span Телефон:
+                 div.feedback__block__input
+                      input(name="name" type="text" id="input__email"  ).input-text
+                      label(for="input__email")
+                            span Email:
+                 div.feedback__block__input__licence
+                     input(type="checkbox" id="licence-1" checked) 
+                     label(for="licence-1") Я согласен на обработку персональных данных
+                 div.feedback__block__input__button
+                     button.button__simple.button__simple_theme_green(type="submit") Отправить
+            div.contacts__content__feeedback__right
+                div.feedback__block__input
+                     textarea(name="message" type="text"  cols="43" rows="19" id="input__textarea" ).input-text
+                     label(for="input__textarea")
+                            span Сообщение:
+            div.contacts__content__feeedback__info
+
+        div.projects__footer
+             include ../common/footer

@@ -1,0 +1,76 @@
+.contacts
+    max-height: 100vh
+    grid-template-columns: 1fr
+    grid-template-rows: 18vh 60vh 20vh
+    grid-row-gap: 20px
+
+.contacts__content
+    height: 53vh
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 15px
+
+    .contacts__content__feeedback__left
+        p
+            font-family: "Roboto-md"
+            font-size: 14pt
+            letter-spacing: 1px
+            font-weight: 400
+            color: $grey
+
+    .contacts__content__feeedback__center
+        grid-template-rows: repeat(5,12%)
+        font-family: "Roboto-md"
+        .feedback__block__input
+            position: relative
+            label
+                position: absolute
+                top: 16%
+                left: 5%
+                transition: .4s
+                color: #999999
+            .input-text
+                background-color: #fbfbfb
+                width: 80%
+                height: 60%
+                text-align: left
+                padding-left: 2%  
+                box-shadow: none
+                border: 1px  #999999 solid
+                &:focus ~ label
+                    top: -13%
+                    left: 3%
+                    background-color: white
+                    color: black
+                &:focus
+                    border: 1px black solid
+                    background-color: white
+
+    .contacts__content__feeedback__right
+        font-family: "Roboto-md"
+        .feedback__block__input
+            position: relative
+            label
+                position: absolute
+                top: 3%
+                left: 5%
+                background-color: white
+                transition: .4s
+                color: #999999
+            .input-text
+                background-color: #fbfbfb
+                width: 80%
+                height: 60%
+                text-align: left
+                padding-left: 2%  
+                box-shadow: none
+                border: 1px  #999999 solid  
+                &:focus ~ label
+                    top: -2.2%
+                    left: 3%
+                    background-color: white
+                    color: black
+                &:focus
+                    border: 1px black solid
+                    background-color: white
+
+        
