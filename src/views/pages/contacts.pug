@@ -4,10 +4,10 @@ block content
         div.contacts__header
              include ../common/header__top/header__top
         div.contacts__content.container.grid
-            div.contacts__content__feeedback__left
+            div.contacts__content__feedback__left
                  h2.mt-title Свяжитесь с нами
                  p Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение
-            div.contacts__content__feeedback__center.grid
+            div.contacts__content__feedback__center.grid
                  div.feedback__block__input
                       input(name="name" id="input__name" type="text"  required).input-text
                       label(for="input__name")
@@ -22,15 +22,36 @@ block content
                             span Email:
                  div.feedback__block__input__licence
                      input(type="checkbox" id="licence-1" checked) 
-                     label(for="licence-1") Я согласен на обработку персональных данных
+                     label(for="licence-1")
+                         a(href="") Я согласен на обработку персональных данных
                  div.feedback__block__input__button
                      button.button__simple.button__simple_theme_green(type="submit") Отправить
-            div.contacts__content__feeedback__right
+            div.contacts__content__feedback__right
                 div.feedback__block__input
                      textarea(name="message" type="text"  cols="43" rows="19" id="input__textarea" ).input-text
                      label(for="input__textarea")
                             span Сообщение:
-            div.contacts__content__feeedback__info
+            div.contacts__content__feedback__info.grid
+               div.feedback__info__item.grid
+                    div.feedback__info__item__icon.grid
+                         i.fas.fa-phone
+                    div.feedback__info__item__text
+                         p.title Телефон:
+                         p.text +7 (495) 142-53-05
+
+               div.feedback__info__item.grid
+                    div.feedback__info__item__icon.grid
+                         i.fas.fa-envelope
+                    div.feedback__info__item__text
+                         p.title E-mail:
+                         p.text info@moskrovservice.ru
+               div.feedback__info__item.grid
+                    div.feedback__info__item__icon.grid
+                         i.fas.fa-clock
+                    div.feedback__info__item__text
+                         p.title Режим работы:
+                         p.text С 9:00 до 22:00
+
 
         div.projects__footer
              include ../common/footer

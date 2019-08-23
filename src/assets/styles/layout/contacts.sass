@@ -1,15 +1,18 @@
 .contacts
-    max-height: 100vh
     grid-template-columns: 1fr
-    grid-template-rows: 18vh 60vh 20vh
-    grid-row-gap: 20px
+    grid-template-rows: 18vh 52vh 30vh
+    grid-row-gap: 5%
 
 .contacts__content
     height: 53vh
     grid-template-columns: 1fr 1fr 1fr
-    grid-column-gap: 15px
+    grid-template-rows: 1fr 20%
+    grid-column-gap: 2%
+    grid-row-gap: 1%
 
-    .contacts__content__feeedback__left
+    .contacts__content__feedback__left
+        h2
+            margin: 0
         p
             font-family: "Roboto-md"
             font-size: 14pt
@@ -17,8 +20,8 @@
             font-weight: 400
             color: $grey
 
-    .contacts__content__feeedback__center
-        grid-template-rows: repeat(5,12%)
+    .contacts__content__feedback__center
+        grid-template-rows: repeat(5,15%)
         font-family: "Roboto-md"
         .feedback__block__input
             position: relative
@@ -45,7 +48,7 @@
                     border: 1px black solid
                     background-color: white
 
-    .contacts__content__feeedback__right
+    .contacts__content__feedback__right
         font-family: "Roboto-md"
         .feedback__block__input
             position: relative
@@ -59,7 +62,7 @@
             .input-text
                 background-color: #fbfbfb
                 width: 80%
-                height: 60%
+                height: 90%
                 text-align: left
                 padding-left: 2%  
                 box-shadow: none
@@ -72,5 +75,43 @@
                 &:focus
                     border: 1px black solid
                     background-color: white
-
+    
+    .contacts__content__feedback__info
+        grid-template-columns: repeat(3, 1fr)
+        grid-column: 1/-1
+        background-color: #fafafa
+        width: 70%
+        border: 1px #bdc3c7 solid
+        justify-self: center
+        .feedback__info__item
+            padding-left: 10px
+            grid-template-columns: 17% 88%
+            grid-column-gap: 4%
+            align-items: center
+            justify-self: center
+            width: 100%
+            text-align: left
         
+            .feedback__info__item__icon
+                background-color: #16a085
+                width: 55px
+                height: 55px
+                border-radius: 50% 
+                text-align: center
+                padding: 5px
+                align-items: center
+                i::before
+                    margin: auto
+                    font-family: "FontAwesome"
+                    font-size: 2rem
+                    color: white
+
+            .feedback__info__item__text
+                .title
+                    font-size: "16pt"
+                    font-family: "Roboto-ld"
+                .text
+                    font-size: "15pt"
+                    font-family: "Roboto-md"
+
+
