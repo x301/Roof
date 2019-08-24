@@ -50,6 +50,7 @@ body
   display: grid
   display: -ms-grid
 
+
 .container
 	margin: 0 auto 0 auto
 	max-width: 85vw
@@ -62,10 +63,6 @@ body
 		font-family: "Roboto-md"
     	font-weight: 200
     	text-align: left
-    	
-		
-
-
 
 #m-menu
 	position: fixed
@@ -89,6 +86,24 @@ body
 
 #head-menu.sticky
 	margin-top: 0
+
+.callback-form_hidden
+	position: absolute
+	display: none
+	height: 100%
+	width: 100%
+	top: 0 
+	left: 0
+	z-index: 4
+	background-color:  rgba(0,0,0,.6)
+	opacity: 1
+	transition: 0.35s ease-in-out
+	&.open
+		display: block
+		
+
+
+
 
 
 
