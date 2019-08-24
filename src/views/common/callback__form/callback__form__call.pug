@@ -1,0 +1,16 @@
+div.callback__form__call
+    div.call__text Заказать звонок
+    div.call__name
+        input(name="name" id="input__name" type="text"  required).input-text
+        label(for="input__name")
+            span Ваше имя:
+    div.call__phone
+        input(name="name" type="text" id="input__phone"  required).input-text
+        label(for="input__phone")
+            span Телефон:
+    div.call__license
+        input(type="checkbox" id="licence-1" checked) 
+        label(for="licence-1")
+            a.license-detail(href="./license.html") Я согласен на обработку персональных данных
+    div.call__button
+        button.button__simple button__simple_theme_green

@@ -4,6 +4,7 @@ import "../libs/jQuery.mmenu-master/dist/addons/pagescroll/jquery.mmenu.pagescro
 import "../libs/jQuery.mmenu-master/dist/addons/fixedelements/jquery.mmenu.fixedelements.js";
 import "inputmask/dist/min/jquery.inputmask.bundle.min";
 import "./modules/gallery.js";
+import "./modules/callback.js";
 
 var $menu = $("#my-menu").mmenu(
   {
