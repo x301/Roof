@@ -1,7 +1,58 @@
 .callback__form__call
-    background: white
     position: absolute
-    top: 32vh
-    left: 32vw
-    width: 36vw
-    height: 36vh
+    top: 35vh
+    left: 35vw
+    width: 30vw
+    height: 30vh
+    display: none
+    background-color: white
+    .call__input
+            justify-items: center
+            position: relative
+            padding: 7px
+            font-family: "Roboto-md"
+            label
+                position: absolute
+                top: 30%
+                left: 10%
+                transition: .4s
+                color: #999999
+            .input-text
+                background-color: #fbfbfb
+                width: 95%
+                height: 40px
+                text-align: left
+                padding-left: 4%  
+                box-shadow: none
+                border: 1px  #999999 solid
+                &:focus ~ label
+                    top: -4%
+                    left: 7%
+                    background-color: white
+                    color: black
+                &:focus
+                    border: 1px black solid
+                    background-color: white
+    .call__license
+        padding: 5px 5px 5px 17px
+        font-family: "Roboto-md"
+        label
+                a
+                    text-decoration: none
+                    color: black
+                    link: black
+                    vlink: black
+                    alink: black
+    
+    .call__button
+        padding: 5px 5px 5px 20px
+
+    .call__text
+        padding: 15px 5px 5px 15px
+        font-family: "Roboto-ld"
+
+    
+            
+        
+        
+

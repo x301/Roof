@@ -4,12 +4,18 @@ let $callBtn = $(".header-back-call").find("button"),
   $callForm = $(".callback__form__call");
 
 $callBtn.click(function(e) {
+  $callFormOverlay.addClass("open");
   setTimeout(function() {
-    $callFormOverlay.addClass("open");
-  });
+    $callForm.slideToggle("slow");
+  }, 500);
 });
+
 $(document).on("click", function(e) {
   let target = $(e.target);
-
-  if ($(target).hasClass("open")) target.removeClass("open");
+  if ($(target).hasClass("open")) {
+    setTimeout(function() {
+      target.removeClass("open");
+    }, 1000);
+    $callForm.slideToggle("slow");
+  }
 });
