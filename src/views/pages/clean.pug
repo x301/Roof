@@ -16,11 +16,13 @@ html(lang="ru-RU")
         link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
         title Ремонт мягкой кровли в Москве и Московской области   
     body 
+        div.order-overlay.callback-form_hidden
+            include ../common/callback__form/callback__form_service-order
         div.clean.grid
             div.clean__head
                  include ../common/header__top/header__top
             div.clean__content.grid.container
-                 div.clean__title.md-title
+                 div.clean__title.service-name.md-title
                      h2 Уборка снега
                  div.clean__navbar
                      include ../common/menu/menu__vertical/menu__vertical

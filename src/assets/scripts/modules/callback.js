@@ -1,7 +1,7 @@
 import { openFormOverlay, closeFormOverlay } from "../index.js";
 
 let $callBtn = $(".header-back-call").find("button"),
-  $callFormOverlay = $(".callback-form_hidden"),
+  $callFormOverlay = $(".callback-form"),
   $callForm = $(".callback__form__call");
 
 $callBtn.click(function(e) {

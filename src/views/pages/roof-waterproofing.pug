@@ -16,11 +16,13 @@ html(lang="ru-RU")
         link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
         title Ремонт мягкой кровли в Москве и Московской области   
     body 
+        div.order-overlay.callback-form_hidden
+            include ../common/callback__form/callback__form_service-order
         div.roof-waterproofing.grid
             div.roof-waterproofing__head
                  include ../common/header__top/header__top
             div.roof-waterproofing__content.grid.container
-                 div.roof-waterproofing__title.md-title
+                 div.roof-waterproofing__title.service-name.md-title
                      h2 Наплавляемая гидроизоляция
                  div.roof-waterproofing__navbar
                      include ../common/menu/menu__vertical/menu__vertical
