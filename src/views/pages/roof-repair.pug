@@ -17,6 +17,8 @@ html(lang="ru-RU")
         link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
         title Ремонт мягкой кровли в Москве и Московской области   
     body 
+     div.callback-form_hidden
+        include ../common/callback__form/callback__form_service-order
      div.roof-repair.grid
         div.roof-repair__head
              include ../common/header__top/header__top
@@ -58,3 +60,4 @@ html(lang="ru-RU")
      block scripts
             script(src="assets/scripts/services.bundle.js")
             script(src="assets/scripts/common.bundle.js")
+            script(src="assets/scripts/index.bundle.js")

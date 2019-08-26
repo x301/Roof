@@ -1,17 +1,36 @@
-div.callback__form__call
-    div.call__text.md-title Оформить заявку
+div.callback__form__service-order
+    div.callback__form__service-order__text.md-title Оформить заявку
     br
-    div.call__input.grid
+    div.callback__form__service-order__input.grid
         input(name="name" id="input__name" type="text"  required).input-text
         label(for="input__name")
             span Ваше имя:
-    div.call__input.grid
+    div.callback__form__service-order__input.grid
         input(name="name" type="text" id="input__phone"  required).input-text
         label(for="input__phone")
             span Телефон:
-    div.call__license
-        input(type="checkbox" id="licence-1" checked) 
-        label(for="licence-1")
+    div.callback__form__service-order__license
+        input(type="checkbox" id="  licence-1" checked) 
+        label(for=" licence-1")
             a.license-detail(href="./license.html") Я согласен на обработку персональных данных
-    div.call__button
+    div.callback__form__service-order__button
         button.button__simple.button__simple_theme_green Подвердить
+    
+
+    div.callback__form__service-order__extra
+        div.extra__wrapper.grid
+            div.extra__input.grid
+                input(name="name" id="input__square" type="text" ).input-text
+                label(for="input__square")
+                    span Площадь м2:
+            div.extra__input
+                input(name="name" id="input__corner" type="text"  ).input-text
+                label(for="input__corner")
+                    span Угол наклона:
+            div.extra__input.grid
+                input(name="name" id="input__height" type="text"  ).input-text
+                label(for="input__height")
+                    span Кол-во этажей:
+    
+    div.callback__form__service-order__extra__button
+        button.extra__button__text.button__simple_theme_white Указать дополниетльные параметры

@@ -97,3 +97,22 @@ API.bind("close:finish", function() {
     $icon.removeClass("is-active");
   }, 100);
 });
+//open overlay and form
+
+export const openFormOverlay = function(overlay, form) {
+  overlay.addClass("open");
+  setTimeout(function() {
+    form.slideToggle("slow");
+  }, 500);
+};
+
+//close overlay and form
+export const closeFormOverlay = function(e, form) {
+  let target = $(e.target);
+  if ($(target).hasClass("open")) {
+    setTimeout(function() {
+      target.removeClass("open");
+    }, 1000);
+    form.slideToggle("slow");
+  }
+};
