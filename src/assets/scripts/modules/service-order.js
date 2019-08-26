@@ -3,7 +3,7 @@ import { openFormOverlay, closeFormOverlay } from "../index.js";
 let $extraBtn = $(".callback__form__service-order__extra__button"),
   $extraFormHidden = $(".callback__form__service-order__extra"),
   $serviceOrderBtn = $(".button__order"),
-  $orderOverlay = $(".callback-form_hidden"),
+  $orderOverlay = $(".order-overlay"),
   $formOrder = $(".callback__form__service-order");
 
 $serviceOrderBtn.click(function() {
