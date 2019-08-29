@@ -7,21 +7,89 @@
 /* Smartphones (вертикальная) ----------- */
 //@media only screen and (max-width: 320px)
 
-/* iPads (вертикальная и горизонтальная) ----------- */
-//@media only screen and (min-width: 768px) and (max-width: 1024px)
 
-/* iPads (горизонтальная) ----------- */
-//@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
 
-/* iPads (вертикальная) ----------- */
-//@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
+
+		
+
 
 /* iPad 3**********/
 //@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) 
 //@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) 
 
 /* Настольные компьютеры и ноутбуки ----------- */
-//@media only screen  and (min-width: 1224px)
+@media only screen  and (max-width: 1024px)
+    .header__top__information
+        grid-template-columns: 40% 40% 20%
+        .header__slogan
+            display: none
+
+    .benefits
+        grid-template-columns: repeat(4, minmax(20%, 30%))
+        grid-column-gap: 1%
+
+    .benefits-items
+        position: relative
+        grid-template-columns: 70px 1fr
+        grid-column-gap: 5%
+        justify-items: center
+        p
+            margin: 0
+            font-size: 14pt
+            padding: 0
+        img
+            padding: 0
+            margin: 0
+        
+    .service-top
+        grid-template-columns: 1fr
+        grid-row-gap: 20px
+        align-self: center
+        padding: .5rem
+        padding-top: 1rem
+        display: block
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+    .discount
+	    .discount__info
+		    max-width: 75%
+		    margin: 0
+		    padding: .7rem
+	    p   
+		    text-align: left
+		    padding: .5rem
+	    .button__simple
+		    max-width: 40%
+            height: 60%
+
+/* iPads (вертикальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
+             
+    .benefits
+        grid-template-rows: 50% 50%
+        grid-template-columns: repeat(2, 50%)
+        grid-column-gap: 1%
+        div:nth-child(odd)
+            grid-row: 2/-1
+    
+            
+
+    .benefits-items
+        position: relative
+        grid-template-columns: 70px 1fr
+        grid-column-gap: 5%
+        justify-items: center
+        p
+            margin: 0
+            font-size: 14pt
+            padding: 0
+        img
+            padding: 0
+            margin: 0
+/* iPads (горизонтальная) ----------- */
+//@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+ 
 
 /* Большие экраны ----------- */
 //@media only screen  and (min-width: 1824px) 
