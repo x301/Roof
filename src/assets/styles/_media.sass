@@ -107,9 +107,11 @@
 
     
 /* Smartphones L (вертикальная и горизонтальная ориентация) ----------- */
-@media only screen and (min-width : 425px) and (max-width : 767px)
+@media only screen and (min-width : 320px) and (max-width : 767px)
     #head-menu
         display: none
+    .m-menu
+        display: block
     .header__top__information
         grid-template-columns: 50% 50% 
         grid-template-rows: 1fr 1fr
@@ -177,19 +179,67 @@
         div:nth-child(6)
             grid-column: 1/-1
             grid-row: 7/8
+
     #my-footer
-        min-height: 50vh
+        min-height: 60vh
+    .work-bottom-items
+        p
+            font-size: 15pt
     .footer-items
         grid-template-columns: 1fr 1fr
-        grid-template-rows: 40% 60%
+        grid-template-rows: 50% 50%
+        grid-row-gap: 3%
         .footer__left
             grid-column: 1/-1
         .footer__center
         .footer__right
-            
 
+@media only screen and (min-width : 320px) and (max-width: 375px)
+    .header__top__information
+        grid-template-columns: 100%
+        grid-row-gap: 25%
+    .benefits
+        padding: 15px
+    .discount 
+	    .discount__info
+		    max-width: 95%
+		    
+    .our-service-right
+        .our-service-items
+            .our-service-items__text 
+                width: 50%
+        div:nth-child(1)
+            .our-service-items__text 
+                width: 50%
+                height: 25%
+        div:nth-child(4)
+            .our-service-items__text 
+                width: 50%
+                height: 28%
+        div:nth-child(5)
+            grid-column: 1/-1
+            grid-row: 5/6
+        div:nth-child(6)
+            grid-column: 1/-1
+            grid-row: 7/8
 
-                
+    .work-bottom-items
+        p
+            font-size: 13pt
+    
+    #my-footer
+        min-height: 50vh
+    .footer-items
+        grid-template-columns: 1fr
+        grid-row-gap: 15%
+        .footer__left
+            display: none
+        .footer__center
+        .footer__right
+            height: 50%
+    .container
+        max-width: 100vw
+        margin: 0
 
 /* iPads (горизонтальная) ----------- */
 //@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
