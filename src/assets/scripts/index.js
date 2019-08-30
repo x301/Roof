@@ -44,10 +44,6 @@ var $menu = $("#my-menu").mmenu(
   }
 );
 
-$("body").on("click", 'a[href^="#/"]', function() {
-  return false;
-});
-
 $(window).on("load", function() {
   $(".loaderArea")
     .find("sk-fading-circle")
@@ -81,7 +77,6 @@ $(document).ready(function() {
 });
 var $icon = $("#m-icon");
 var API = $menu.data("mmenu");
-console.log(API);
 
 $icon.on("click", function() {
   API.open();

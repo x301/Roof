@@ -1,5 +1,4 @@
-/* Smartphones (вертикальная и горизонтальная ориентация) ----------- */
-//@media only screen and (min-width : 320px) and (max-width : 480px)
+
 
 /* Smartphones (горизонтальная) ----------- */
 //@media only screen and (min-width: 321px)
@@ -32,7 +31,6 @@
         position: relative
         grid-template-columns: 70px 1fr
         grid-column-gap: 5%
-        justify-items: center
         p
             margin: 0
             font-size: 14pt
@@ -49,13 +47,36 @@
         padding-top: 1rem
         display: block
 
-/* iPads (вертикальная и горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px)
+/* Планшеты ----------- */
+@media only screen and  (max-width : 768px)
     .discount
 	    .discount__info
 		    max-width: 75%
 		    margin: 0
-		    padding: .7rem
+		    padding: .7rem             
+    .benefits
+        .benefits-items
+            position: relative
+            grid-template-columns: 70px 1fr
+            grid-column-gap: 5%
+            p
+                margin: 0
+                font-size: 14pt
+                padding: 0
+                text-align: left
+            img
+                padding: 0
+                margin: 0
+
+/* iPads (вертикальная и горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+    .benefits
+        grid-template-rows: 50% 50%
+        grid-template-columns: repeat(2, 50%)
+        grid-column-gap: 1%
+        div:nth-child(odd)
+            grid-row: 2/-1
+    .discount
 	    p   
 		    text-align: left
 		    padding: .5rem
@@ -65,28 +86,111 @@
 
 /* iPads (вертикальная) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
-             
     .benefits
         grid-template-rows: 50% 50%
         grid-template-columns: repeat(2, 50%)
         grid-column-gap: 1%
         div:nth-child(odd)
             grid-row: 2/-1
+        .benefits-items
+            position: relative
+            grid-template-columns: 70px 1fr
+            grid-column-gap: 5%
+            p
+                margin: 0
+                font-size: 14pt
+                padding: 0
+            img
+                padding: 0
+                margin: 0
+
+
     
+/* Smartphones L (вертикальная и горизонтальная ориентация) ----------- */
+@media only screen and (min-width : 425px) and (max-width : 767px)
+    #head-menu
+        display: none
+    .header__top__information
+        grid-template-columns: 50% 50% 
+        grid-template-rows: 1fr 1fr
+        .header__logo
+            grid-column: 1/-1
+        .header__phone
+            grid-column: 1/2
+            grid-row: 2/3
+        .button__simple
+            grid-column: 2/-1
+            grid-row: 2/3
+    .discount 
+	    .discount__info
+		    max-width: 85%
+		    margin: 0
+		    padding: .7rem
+
+    .container
+        max-width: 96vw
+
+    .header-content
+	    grid-template-columns: 100%
+	    grid-template-rows: 1.2fr 1fr
+	    grid-row-gap: 15px
+	    align-content: center 
+    
+    .benefits
+        grid-template-rows: repeat(4, 1fr)
+        grid-template-columns: 100%
+        grid-column-gap: 0
+        grid-row-gap: 3%
+        div:nth-child(odd)
+            
+        .benefits-items
+            position: relative
+            grid-template-columns: 70px 1fr
+            grid-column-gap: 5%
+            p
+
+    .service-top
+        grid-template-columns: 1fr
+    .our-service-right
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(6, 16vh)
+        grid-row-gap: 1%
+        div:nth-child(1)
+            grid-column: 1/-1
+            grid-row: 1/2
+            .our-service-items__text 
+                width: 70%
+        div:nth-child(2)
+            grid-column: 1/-1
+            grid-row: 2/3
+        div:nth-child(3)
+            grid-column: 1/-1
+            grid-row: 3/4
+        div:nth-child(4)
+            grid-column: 1/-1
+            grid-row: 4/5
+            .our-service-items__text 
+                width: 73%
+        div:nth-child(5)
+            grid-column: 1/-1
+            grid-row: 5/6
+        div:nth-child(6)
+            grid-column: 1/-1
+            grid-row: 7/8
+    #my-footer
+        min-height: 50vh
+    .footer-items
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 40% 60%
+        .footer__left
+            grid-column: 1/-1
+        .footer__center
+        .footer__right
             
 
-    .benefits-items
-        position: relative
-        grid-template-columns: 70px 1fr
-        grid-column-gap: 5%
-        justify-items: center
-        p
-            margin: 0
-            font-size: 14pt
-            padding: 0
-        img
-            padding: 0
-            margin: 0
+
+                
+
 /* iPads (горизонтальная) ----------- */
 //@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
  
