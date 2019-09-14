@@ -1,12 +1,12 @@
 extends ../main.layout.pug
 block content
- include ../common/loader/loader
- section#my-page.grid
-                 a#m-icon(href="#").hamburger.hamburger--collapse
-                    span.hamburger-box
-                        span.hamburger-inner
-             include partials/main/header
-             section#my-content
-                 include partials/main/our_service
-                 include partials/main/work
-             include ../common/footer
+    include ../common/loader/loader
+    section#my-page.grid
+        a#m-icon(href="#").hamburger.hamburger--collapse
+            span.hamburger-box
+                span.hamburger-inner
+        include partials/main/header
+        section#my-content
+             include partials/main/our_service
+             include partials/main/work
+    include ../common/footer
