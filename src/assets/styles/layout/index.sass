@@ -6,21 +6,18 @@
 @import "../blocks/header.sass"
 @import "../blocks/our_service.sass"
 @import "../blocks/work.sass"
-//@import "../blocks/contacts.sass"
 @import "../blocks/footer.sass"
 @import "../blocks/loader.sass"
 
 #my-page
+  
   min-height: 100%
-  grid-template-rows: [row1] auto [row2] auto [row3] 30px [row4]
-  -ms-grid-rows: [row1] auto [row2] auto [row3] 30px [row4]
-  grid-auto-flow: row
+  
   grid-template-areas: "header" "main" "footer"
   
 
 #my-content
   grid-area: main
-  grid-row: row2 / row3
 
 .grid 
 	display: grid

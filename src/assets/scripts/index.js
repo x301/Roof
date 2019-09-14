@@ -6,44 +6,6 @@ import "inputmask/dist/min/jquery.inputmask.bundle.min";
 import "./modules/gallery.js";
 import "./modules/callback.js";
 
-var $menu = $("#my-menu").mmenu(
-  {
-    // options
-    extensions: [
-      "theme-white",
-      "listview-justify",
-      "border-full",
-      "swadow-page",
-      "pagedim-black"
-    ],
-    onClick: {
-      preventDefault: true,
-      setSelected: false
-    },
-
-    navbar: {
-      title: "<img src =../images/Logo-1.png>"
-    },
-    pageScroll: {
-      scroll: true,
-      update: true
-    }
-  },
-
-  {
-    // configuration
-    classNames: {
-      fixedElements: {
-        fixed: "sticky"
-      }
-    },
-    offCanvas: {
-      pageNodetype: "section"
-    },
-    clone: true
-  }
-);
-
 $(window).on("load", function() {
   $(".loaderArea")
     .find("sk-fading-circle")

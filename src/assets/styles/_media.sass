@@ -9,15 +9,7 @@
 //@media only screen and (min-width: 1024px) and (max-width: 1373) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
 @media only screen and (max-width: 1373px)
     /* services (page) ----------- */
-.services
-    grid-template-columns: 100%
-    grid-template-rows: 18vh 160vh 10vh
-    .service__content
-        grid-template-rows: 60px 150vh
-        max-width: 90vw
-    .services__main
-        grid-template-columns: 1fr
-        height: 100%
+
     /* roof-repair (page) ----------- */
     .roof-repair
         .roof-repair__content
@@ -192,30 +184,27 @@
         grid-template-columns: 1fr
     .our-service-right
         grid-template-columns: 1fr
-        grid-template-rows: repeat(6, 16vh)
+        grid-template-rows: repeat(6, 25vh)
         grid-row-gap: 1%
-        div: nth-child(1)
-        grid-column: 1/-1
-        grid-row: 1/2
-        .our-service-items__text
-            width: 70%
-            div: nth-child(2)
+        div:nth-child(1)
+            grid-column: 1/-1
+            grid-row: 1/2
+        div:nth-child(2)
             grid-column: 1/-1
             grid-row: 2/3
-            div: nth-child(3)
+        div:nth-child(3)
             grid-column: 1/-1
             grid-row: 3/4
-            div: nth-child(4)
+        div:nth-child(4)
             grid-column: 1/-1
             grid-row: 4/5
-            .our-service-items__text
-                width: 73%
-                div: nth-child(5)
-                grid-column: 1/-1
-                grid-row: 5/6
-                div: nth-child(6)
-                grid-column: 1/-1
-                grid-row: 7/8
+   
+        div:nth-child(5)
+            grid-column: 1/-1
+            grid-row: 5/6
+        div:nth-child(6)
+            grid-column: 1/-1
+            grid-row: 7/8
 
     #my-footer
         min-height: 60vh
