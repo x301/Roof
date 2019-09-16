@@ -1,7 +1,3 @@
-import "../libs/jQuery.mmenu-master/dist/jquery.mmenu.js";
-import "../libs/fullpage/fullpage.js";
-import "../libs/jQuery.mmenu-master/dist/addons/pagescroll/jquery.mmenu.pagescroll.js";
-import "../libs/jQuery.mmenu-master/dist/addons/fixedelements/jquery.mmenu.fixedelements.js";
 import "inputmask/dist/min/jquery.inputmask.bundle.min";
 import "./modules/gallery.js";
 import "./modules/callback.js";
@@ -37,23 +33,7 @@ $(document).ready(function() {
     return false;
   });
 });
-var $icon = $("#m-icon");
-var API = $menu.data("mmenu");
 
-$icon.on("click", function() {
-  API.open();
-});
-
-API.bind("open:finish", function() {
-  setTimeout(function() {
-    $icon.addClass("is-active");
-  }, 100);
-});
-API.bind("close:finish", function() {
-  setTimeout(function() {
-    $icon.removeClass("is-active");
-  }, 100);
-});
 //open overlay and form
 
 export const openFormOverlay = function(overlay, form) {
