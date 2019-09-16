@@ -1,53 +1,87 @@
 .contacts
-    grid-template-columns: 1fr
-    grid-template-rows: 18vh 52vh 30vh
-    grid-row-gap: 5%
+    grid-template-rows: .1fr 1fr 0fr
+    grid-row-gap: 2vh
 
 .contacts__content
-    height: 53vh
-    grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: 1fr 20%
-    grid-column-gap: 2%
-    grid-row-gap: 1%
+    grid-template-rows: 0fr 0fr
+    grid-row-gap: 2vh
+    .contacts__content__feedback
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        grid-column-gap: 1vw
 
-    .contacts__content__feedback__left
-        h2
-            margin: 0
-        p
+        .contacts__content__feedback__about
+            h2
+                margin: 0
+            p
+                font-family: "Roboto-md"
+                font-size: 14pt
+                letter-spacing: 1px
+                font-weight: 400
+                color: $grey
+
+        .contacts__content__feedback__form
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+            grid-template-rows: .5fr 1fr
+            grid-column-gap: 1vw
+            grid-row-gap: 1vh
             font-family: "Roboto-md"
-            font-size: 14pt
-            letter-spacing: 1px
-            font-weight: 400
-            color: $grey
+            .feedback__form__left
+                grid-template-rows: repeat(3, 1fr)
+                grid-row-gap: 1vh
+                .feedback__block__input
+                    position: relative
+                    label
+                        position: absolute
+                        top: 7.5px
+                        left: 5%
+                        transition: .4s
+                        color: #999999
+                    .input-text
+                        background-color: #fbfbfb
+                        width: 100%
+                        height: 30px
+                        text-align: left
+                        padding-left: 2%  
+                        box-shadow: none
+                        border: 1px  #999999 solid
+                        &:focus ~ label
+                            top: -8px
+                            left: 3%
+                            background-color: white
+                            color: black
+                        &:focus
+                            border: 1px black solid
+                            background-color: white
+            .feedback__form__right
+                font-family: "Roboto-md"
+                .feedback__block__input
+                    position: relative
+                    label
+                        position: absolute
+                        top: 3%
+                        left: 5%
+                        background-color: white
+                        transition: .4s
+                        color: #999999
+                    .input-text
+                        background-color: #fbfbfb
+                        width: 100%
+                        height: 90%
+                        text-align: left
+                        padding-left: 2%  
+                        box-shadow: none
+                        border: 1px  #999999 solid  
+                        &:focus ~ label
+                            top: -2.4%
+                            left: 3%
+                            background-color: white
+                            color: black
+                        &:focus
+                            border: 1px black solid
+                            background-color: white
 
-    .contacts__content__feedback__center
-        grid-template-rows: repeat(5,15%)
-        font-family: "Roboto-md"
-        .feedback__block__input
-            position: relative
-            label
-                position: absolute
-                top: 16%
-                left: 5%
-                transition: .4s
-                color: #999999
-            .input-text
-                background-color: #fbfbfb
-                width: 80%
-                height: 60%
-                text-align: left
-                padding-left: 2%  
-                box-shadow: none
-                border: 1px  #999999 solid
-                &:focus ~ label
-                    top: -13%
-                    left: 3%
-                    background-color: white
-                    color: black
-                &:focus
-                    border: 1px black solid
-                    background-color: white
         .feedback__block__input__licence
+            display: block
             label
                 a
                     text-decoration: none
@@ -55,46 +89,22 @@
                     link: black
                     vlink: black
                     alink: black
+            button
+                display: block
+                margin-top: 1vh
 
-    .contacts__content__feedback__right
-        font-family: "Roboto-md"
-        .feedback__block__input
-            position: relative
-            label
-                position: absolute
-                top: 3%
-                left: 5%
-                background-color: white
-                transition: .4s
-                color: #999999
-            .input-text
-                background-color: #fbfbfb
-                width: 80%
-                height: 90%
-                text-align: left
-                padding-left: 2%  
-                box-shadow: none
-                border: 1px  #999999 solid  
-                &:focus ~ label
-                    top: -2.2%
-                    left: 3%
-                    background-color: white
-                    color: black
-                &:focus
-                    border: 1px black solid
-                    background-color: white
+    
     
     .contacts__content__feedback__info
-        grid-template-columns: repeat(3, 1fr)
-        grid-column: 1/-1
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+        width: 100%
         background-color: #fafafa
-        width: 70%
         border: 1px #bdc3c7 solid
         justify-self: center
         .feedback__info__item
             padding-left: 10px
-            grid-template-columns: 17% 88%
-            grid-column-gap: 4%
+            grid-template-columns: 0fr 1fr
+            grid-column-gap: 1vw
             align-items: center
             justify-self: center
             width: 100%
