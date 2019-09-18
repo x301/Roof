@@ -1,26 +1,84 @@
 .main-wrapper
     position: relative
     overflow-x: hidden
-    .m-menu-wrapper
-        position: fixed
-        left: 0
-        top: 0
-        width: 30%
-        height: 100vh
-        z-index: 99
-        background: white
-        transform: translateX(-100%)
-        transition: 1s
+.m-menu-wrapper
+    position: fixed
+    left: 0
+    top: 0
+    width: 40%
+    height: 100vh
+    background: #f3f3f3
+    transform: translateX(-100%)
+    transition: 1s
+    color: rgba(0,0,0,.75)
+    
     .m-menu-wrapper_active
         transform: translateX(0%)
-
 .m-menu
-    .m-menu__main
-        display: grid
-        justify-content: center
-        align-items: center
-        height: 50%
-    
+    width: 100%
+    text-align: center
+    position: relative
+    height: 100%
+    overflow-x: hidden
+.m-menu__main
+    transition: 1s
+
+.m-menu__main_hidden
+    transform: translateX(100%)
+
+.m-menu__main__items
+    padding: 20px 20px
+    width: 100%
+    font-size: 14pt
+    border-bottom: 1px solid rgba(0,0,0,.1)
+    position: relative
+    .submenu__btn
+        height: 100%
+        background: inherit
+        border: 1px solid rgba(0,0,0,.1)
+        border-top: none
+        border-bottom: none 
+
+    a
+        text-decoration: none
+        color: black
+        font-family: "Roboto-md"
+
+.submenu
+    position: absolute
+    top: 0
+    height: 100%
+    transform: translateX(-100%)
+    width: 100%
+    font-size: 18pt
+    transition: 1s
+    grid-template-rows: 20px 30px 0fr 0fr 0fr 0fr
+    grid-row-gap: 2vh
+
+    .submenu__items
+        width: 100%
+        border-bottom: 1px solid rgba(0,0,0,.1)
+        position: relative
+        text-align: left
+        padding-left: 10px
+        a
+            text-decoration: none
+            color: black
+            font-size: 14pt
+            font-family: "Roboto-md"
+
+       
+    .submenu__title
+        color: red
+        text-align: left
+        padding-left: 10px
+        background-color: #fbfbfb
+        border-bottom: 1px solid rgba(0,0,0,.1)
+            
+
+.submenu_active
+    transform: translateX(0%)
+
 .m-menu__btn
     width: 30px
     height: 30px
@@ -28,7 +86,75 @@
     position: absolute
     right: -35px
     top: 10px
+    z-index: 9
+
+.submenu__btn
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+
+.extramenu
+    display: none
+    background: #fbfbfb
+    border-top: 1px solid #f2f2f2
+
+    .extramenu__items
+        text-align: left
+        border-bottom: 1px solid rgba(0,0,0,.1)
+        padding: 7px 0
+        &:last-child
+            border-bottom: none
+
+        a
+            text-decoration: none
+            color: black
+            font-size: 14pt
+        
+        
+.extramenu__btn
+    text-align: left
+    width: 100%
+    font-size: 14pt
+    font-family: "Roboto-md"
+    background-color: inherit
+    border: none
+    position: relative
+    padding: 0
+
+    &::after
+                     content: ""
+                     display: block
+                     position: absolute
+                     top: 50%
+                     right: 10px
+                     width: 0
+                     height: 0
+                     border-top: 4px solid black
+                     border-bottom: 0 solid black
+                     border-left: 4px solid transparent
+                     border-right: 4px solid transparent
+                     transition:border-bottom .1s, border-top .1s .1s
+            
+.extramenu__btn_active
+
+    &::after
+        border-top: 0 solid black
+        border-bottom: 4px solid black
 .content
     transition: 1s
+
 .content_active
     transform: translateX(30%)
+.menu_back
+    text-align: left
+    height: 100%
+    width: 100%
+    padding: 0 15px
+    color: black
+    p
+        display: inline
+        font-family: "Roboto-md"
+        font-size: 14pt
+
+

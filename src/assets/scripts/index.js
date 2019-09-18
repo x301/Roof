@@ -8,6 +8,25 @@ $(".m-menu__btn").on("click", function(e) {
   $(".content").toggleClass("content_active");
 });
 
+$(".submenu__btn").on("click", function(e) {
+  e.preventDefault();
+  $(".m-menu__main").toggleClass("m-menu__main_hidden");
+  $(".submenu").toggleClass("submenu_active");
+});
+$(".menu_back ").on("click", function(e) {
+  e.preventDefault();
+  $(".m-menu__main").toggleClass("m-menu__main_hidden");
+  $(".submenu").toggleClass("submenu_active");
+});
+
+$(".extramenu__btn").on("click", function() {
+  $(this).toggleClass("extramenu__btn_active");
+  $(this)
+    .parent()
+    .find(".extramenu")
+    .slideToggle();
+});
+
 $(window).on("load", function() {
   $(".loaderArea")
     .find("sk-fading-circle")
