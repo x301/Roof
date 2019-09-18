@@ -1,45 +1,101 @@
-#my-menu.grid
+#my-menu
+    max-width: 100vw
+    background-color: #16a085
+    text-align: center
+    align-content: center
+    color: white
+    font-family: "Roboto-md"
     ul
-     list-style: none
-     margin: 0
-     padding-left: 0
-     li
-         display: inline-block
-         padding: 0 3% 0 3%
-         border-right: 1px solid
-         border-color: white
-         &:last-child
-             border: none
-        
-     a 
-         display: block
-         text-decoration: none
-         letter-spacing: 1px
-         font-family: "Roboto-ld"
-         font-weight: 300
-         position: relative
-         margin: 0 8px 0 8px
-         font-size: 18pt
-         display: block
-         text-decoration: uppercase
-         transition: color .4s
-         color: white
-         &:visited
-             #9d999d
-         &:hover
-             color: #feb386
-             &:after
-                 right: 0
-             &:before
-                 left: 0
-         &:after,&:before
-             content: ""
-             position: absolute
-             height: 2px
-             top: auto
-             right: 50%
-             bottom: -5px
-             left: 50%
-             background: #feb386
-             transition: .5s
+        list-style: none
+        margin: 0
+        padding-left: 0
+        li.menu__list
+            display: inline-block
+            position: relative
+            padding: 20px 60px
+            cursor: pointer
+            &:hover
+               background: linear-gradient(to right top,#1abc9c , #2ecc71 )
+            &:hover > .submenu
+                display: block
+
+            .submenu
+                position: absolute
+                top: 64px
+                left: 0
+                display: none
+                background: #1abc9c
+                width: 100%
+                li.submenu__list
+                    display: inline-block
+                    padding: 10px 20px
+                    width: 100%
+                    position: relative
+                    border-bottom: 1px solid #16a085
+                    &:hover
+                        background: linear-gradient(to right top,#1abc9c , #2ecc71 )
+                    &:hover > .submenu_right
+                        display: block
+                        
+                    .submenu_right
+                        position: absolute
+                        left: 217px
+                        top: 0
+                        background: #1abc9c
+                        width: 100%
+                        display: none
+                        li.submenu_right__items
+                            display: inline-block
+                            padding: 10px 0
+                            width: 100%
+                            border-bottom: 1px solid #16a085
+                            &:hover
+                                background: linear-gradient(to right top,#1abc9c , #2ecc71 )
+                            a
+                                display: block
+                                text-decoration: none
+                                letter-spacing: 1px
+                                font-family: "Roboto-ld"
+                                font-weight: 300
+                                position: relative
+                                margin: 0 8px 0 8px
+                                font-size: 12pt
+                                display: block
+                                text-decoration: uppercase
+                                transition: color .4s
+                                color: white
+                                
+                        
+            
+            a 
+                display: block
+                text-decoration: none
+                letter-spacing: 1px
+                font-family: "Roboto-ld"
+                font-weight: 300
+                position: relative
+                margin: 0 8px 0 8px
+                font-size: 18pt
+                display: block
+                text-decoration: uppercase
+                transition: color .4s
+                color: white
+                &:visited
+                 #9d999d
+                &:hover
+                    color: #feb386
+                &:after
+                    right: 0
+                &:before
+                    left: 0
+                &:after,&:before
+                    content: ""
+                    position: absolute
+                    height: 2px
+                    top: auto
+                    right: 50%
+                    bottom: -5px
+                    left: 50%
+                    background: #feb386
+                    ransition: .5s
 
