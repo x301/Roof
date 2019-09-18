@@ -1,14 +1,32 @@
-nav#menu.grid
- ul
-    li
-     a(href="./index.html") Главная
-    li 
-     a(href="./services.html") Услуги
-    li 
-     a(href="./projects.html") Проекты
-    li 
-     a(href="./contacts.html") Контакты
+nav.m-menu
+   div.m-menu__main
+      a(href="#").m-menu__btn
+      div.m-menu__main__items 
+         a(href="#") Главная 
+      div.m-menu__main__items
+         a(href="#") Услуги
+         div.submenu
+            div.submenu__items Наплавляемая кровля
+               div.submenu
+                  div.submenu__items
+                     a(href="") Монтаж кровли
+                  div.submenu__items
+                     a(href="") Ремонт кровли
+            div.submenu__items Черепица
+               div.submenu
+                  div.submenu__items
+                     a(href="") Металочерепица
+                  div.submenu__items
+                     a(href="") Гибкая черепица
+            div.submenu__items Гидроизоляция
+               div.submenu
+                  div.submenu__items
+                     a(href="") Наплавляемая гидроизоляция
+                  div.submenu__items
+                     a(href="") НАпыляемая гидроизоляция
+            div.submenu__items Уборка снега
+      div.m-menu__main__items
+         a(href="#") Проекты 
+      div.m-menu__main__items
+         a(href="#") Контакты 
 
-
-   
- 

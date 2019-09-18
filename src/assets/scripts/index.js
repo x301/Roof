@@ -2,6 +2,12 @@ import "inputmask/dist/min/jquery.inputmask.bundle.min";
 import "./modules/gallery.js";
 import "./modules/callback.js";
 
+$(".m-menu__btn").on("click", function(e) {
+  e.preventDefault();
+  $(".m-menu-wrapper").toggleClass("m-menu-wrapper_active");
+  $(".content").toggleClass("content_active");
+});
+
 $(window).on("load", function() {
   $(".loaderArea")
     .find("sk-fading-circle")
