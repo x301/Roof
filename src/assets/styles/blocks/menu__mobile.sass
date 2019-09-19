@@ -2,17 +2,19 @@
     position: relative
     overflow-x: hidden
 .m-menu-wrapper
+    display: none
     position: fixed
     left: 0
     top: 0
-    width: 40%
+    width: 50%
     height: 100vh
     background: #f3f3f3
     transform: translateX(-100%)
     transition: 1s
     color: rgba(0,0,0,.75)
+    z-index: 99
     
-    .m-menu-wrapper_active
+.m-menu-wrapper_active
         transform: translateX(0%)
 .m-menu
     width: 100%
@@ -22,9 +24,8 @@
     overflow-x: hidden
 .m-menu__main
     transition: 1s
-
 .m-menu__main_hidden
-    transform: translateX(100%)
+    transform: translateX(130%)
 
 .m-menu__main__items
     padding: 20px 20px
@@ -82,11 +83,19 @@
 .m-menu__btn
     width: 30px
     height: 30px
-    background-color: #333333
     position: absolute
-    right: -35px
-    top: 10px
-    z-index: 9
+    right: -20px
+    top: 20px
+    z-index: 99
+.hamburger
+	padding-top: .5rem
+	.hamburger-box
+		.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+			border-radius: 0
+			width: 33px
+			height: 3px
+			background-color: #333333
+
 
 .submenu__btn
     position: absolute
@@ -145,7 +154,7 @@
     transition: 1s
 
 .content_active
-    transform: translateX(30%)
+    transform: translateX(50%)
 .menu_back
     text-align: left
     height: 100%

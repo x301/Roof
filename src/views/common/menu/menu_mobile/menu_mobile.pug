@@ -1,6 +1,7 @@
-a(href="#").m-menu__btn
+a(href="#").m-menu__btn.hamburger.hamburger--collapse
+        span.hamburger-box
+          span.hamburger-inner
 nav.m-menu.grid
-
    div.m-menu__main
       div.m-menu__main__items 
          a(href="#") Главная 
@@ -12,6 +13,9 @@ nav.m-menu.grid
          a(href="#") Проекты 
       div.m-menu__main__items
          a(href="#") Контакты 
+      div.m-menu__main__items
+       i.phone.fa.fa-phone 
+         a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05 
    div.submenu.grid
       div.menu_back 
          i.fas.fa-long-arrow-alt-left
