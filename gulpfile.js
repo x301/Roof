@@ -47,8 +47,8 @@ function deploy() {
   });
   let globs = ["./dist/**"];
   return gulp
-    .src(globs, { base: ".", buffer: false })
-    .pipe(conn.dest("/www/moskrovservice.ru"));
+    .src(globs, { base: "dist", buffer: false })
+    .pipe(conn.dest("/www/moskrovservice.ru/"));
 }
 //watcher
 function watch() {

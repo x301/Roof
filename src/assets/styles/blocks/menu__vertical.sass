@@ -1,89 +1,88 @@
 #menu__vertical
-        ul
-         max-height: 80%
-         font-family: "Roboto-md"
-         font-size: 16pt
-         margin: 0
-         padding: 0
-         li
-             position: relative
-             padding: 10px 0 0 0
-             display: block
-             list-style-type: none
-             border: 1px solid #bdc3c7
-             box-shadow: 0 0 1px #bdc3c7
-             border-bottom: 0
-             transition: background .4s
-             text-align: center
-             background: #fafafa
-             label 
-                 display: block
-                 position: relative
-                 display: block
-                 padding: 0 2px 0 2px
-                 transition: background .4s
-                 line-height: 2em
-                 cursor: pointer
-                 background: #fafafa
+    ul
+        max-height: 80%
+        font-family: "Roboto-md"
+        font-size: 16pt
+        margin: 0
+        padding: 0
+        li
+            position: relative
+            padding: 10px 0 0 0
+            display: block
+            list-style-type: none
+            border: 1px solid #bdc3c7
+            box-shadow: 0 0 1px #bdc3c7
+            border-bottom: 0
+            transition: background .4s
+            text-align: center
+            background: #fafafa
+            label 
+                display: block
+                position: relative
+                display: block
+                padding: 0 2px 0 2px
+                transition: background .4s
+                line-height: 2em
+                cursor: pointer
+                background: #fafafa
 
-                 &:hover input:checked~label::after
-                     border-top: 0 solid red
-                     border-bottom: 4px solid black
-                     transition: border-top .1s, border-bottom .1s .1s
-                 &::after
-                     content: ""
-                     display: block
-                     position: absolute
-                     top: 50%
-                     right: 10px
-                     width: 0
-                     height: 0
-                     border-top: 4px solid black
-                     border-bottom: 0 solid black
-                     border-left: 4px solid transparent
-                     border-right: 4px solid transparent
-                     transition:border-bottom .1s, border-top .1s .1s
-             input
-                 display: none
-                 &:checked ~ label 
-                     background: $green
-                     padding-bottom: 0 
-                     &::after
-                         border-top: 0 solid black
-                         border-bottom: 4px solid black
-                         transition:border-top .1s, border-bottom .1s .1s
+                &:hover input:checked~label::after
+                    border-top: 0 solid red
+                    border-bottom: 4px solid black
+                    transition: border-top .1s, border-bottom .1s .1s
+                &::after
+                    content: ""
+                    display: block
+                    position: absolute
+                    top: 50%
+                    right: 10px
+                    width: 0
+                    height: 0
+                    border-top: 4px solid black
+                    border-bottom: 0 solid black
+                    border-left: 4px solid transparent
+                    border-right: 4px solid transparent
+                    transition:border-bottom .1s, border-top .1s .1s
+            input
+                display: none
+                &:checked ~ label 
+                    background: $green
+                    padding-bottom: 0 
+                    &::after
+                        border-top: 0 solid black
+                        border-bottom: 4px solid black
+                        transition:border-top .1s, border-bottom .1s .1s
                      
-                 &:checked ~ ul.submenu
-                     border-top: 1px solid #ecf0f1
+                &:checked ~ ul.menu-vertical__submenu
+                    border-top: 1px solid #ecf0f1
                  
   
-             ul.submenu
-                     display: none
-                     padding: 0
-                     overflow: hidden
-                     list-style-type: none
-                     background: #ecf0f1
-                     //box-shadow: 0 0 1px rgba(0,0,0,.3)
-                     transition: max-height 0.4s ease-out
-                     min-width: 100%
-                     border: 0px
-                     li 
-                         border: 0px
-                         background: #ecf0f1
-                         padding: 10px 0 10px 0
-                         &:hover
-                                 background: #feb386
-                         a
-                             display: block
-                             text-decoration: none
-                             letter-spacing: 1px
-                             position: relative
-                             font-size: 14pt
-                             margin: 0
-                             padding: 0
-                             text-decoration: uppercase
-                             color: black
-                             text-align: left
-                             padding-left: 10px
+            ul.menu-vertical__submenu
+                display: none
+                padding: 0
+                overflow: hidden
+                list-style-type: none
+                background: #ecf0f1
+                //box-shadow: 0 0 1px rgba(0,0,0,.3)
+                transition: max-height 0.4s ease-out
+                min-width: 100%
+                border: 0px
+                li 
+                    border: 0px
+                    background: #ecf0f1
+                    padding: 10px 0 10px 0
+                    &:hover
+                        background: #feb386
+                    a
+                        display: block
+                        text-decoration: none
+                        letter-spacing: 1px
+                        font-size: 14pt
+                        margin: 0
+                        padding: 0
+                        text-decoration: uppercase
+                        color: black
+                        text-align: left
+                        padding-left: 10px
                              
     
