@@ -10,6 +10,7 @@ const webpackConfig = require("./webpack.config.js");
 const browserSync = require("browser-sync").create();
 const imagemin = require("gulp-imagemin");
 const autoprefixer = require("gulp-autoprefixer");
+const gulpDeployFtp = require("vinyl-ftp");
 
 const paths = {
   root: "./dist",
@@ -37,6 +38,18 @@ const paths = {
   }
 };
 
+function deploy() {
+  let conn = gulpDeployFtp.create({
+    host: "31.31.196.8",
+    port: 21,
+    user: "u0571017",
+    pass: "2_UeVtdA"
+  });
+  let globs = ["./dist/**"];
+  return gulp
+    .src(globs, { base: ".", buffer: false })
+    .pipe(conn.dest("/www/moskrovservice.ru"));
+}
 //watcher
 function watch() {
   gulp.watch(paths.styles.src, styles);
@@ -110,6 +123,7 @@ exports.styles = styles;
 exports.clean = clean;
 exports.img = img;
 exports.icons = icons;
+exports.deploy = deploy;
 
 gulp.task(
   "default",

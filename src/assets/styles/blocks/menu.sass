@@ -5,23 +5,22 @@
     align-content: center
     color: white
     font-family: "Roboto-md"
+    z-index: 99
     ul
         list-style: none
         margin: 0
         padding-left: 0
-        li.menu__list
+        .menu__list
             display: inline-block
             position: relative
             padding: 20px 60px
             cursor: pointer
             &:hover
                background: linear-gradient(to right top,#1abc9c , #2ecc71 )
-            &:hover > a
-                color: #feb386
-            &:hover > .submenu
+            &:hover > .menu__list__submenu
                 display: block
 
-            .submenu
+            .menu__list__submenu
                 position: absolute
                 top: 64px
                 left: 0
