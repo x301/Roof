@@ -1,78 +1,81 @@
 extends ../main.layout.pug
 block content
-    section.projects.grid
-        div.projects__header
-             include ../common/header__top/header__top
-        div.projects__content.container.grid
-            div.projects__content__gallery
-                div.projects__content__title.md-title
-                    h2 Проекты
-                ul.img__list
-                    li
-                        a(href="assets/images/projects/img-2-lg.jpg")
-                            img(src="assets/images/projects/img-2-sm.jpg", alt="")
-                    li
-                        a(href="assets/images/projects/img-4-lg.jpeg")
-                            img(src="assets/images/projects/img-4-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-5-lg.jpeg")
-                            img(src="assets/images/projects/img-5-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-6-lg.jpeg")
-                            img(src="assets/images/projects/img-6-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-7-lg.jpeg")
-                            img(src="assets/images/projects/img-7-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-9-lg.jpeg")
-                            img(src="assets/images/projects/img-9-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-10-lg.jpeg")
-                            img(src="assets/images/projects/img-10-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-12-lg.jpg")
-                            img(src="assets/images/projects/img-12-sm.jpg", alt="")
-                    li
-                        a(href="assets/images/projects/img-13-lg.jpg")
-                            img(src="assets/images/projects/img-13-sm.jpg", alt="")
-                    li
-                        a(href="assets/images/projects/img-14-lg.jpeg")
-                            img(src="assets/images/projects/img-14-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-15-lg.jpg")
-                            img(src="assets/images/projects/img-15-sm.jpg", alt="")
-                    li
-                        a(href="assets/images/projects/img-16-lg.jpeg")
-                            img(src="assets/images/projects/img-16-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-18-lg.jpeg")
-                            img(src="assets/images/projects/img-18-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-19-lg.jpeg")
-                            img(src="assets/images/projects/img-19-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-20-lg.jpeg")
-                            img(src="assets/images/projects/img-20-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-21-lg.jpeg")
-                            img(src="assets/images/projects/img-21-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-22-lg.jpeg")
-                            img(src="assets/images/projects/img-22-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-23-lg.jpeg")
-                            img(src="assets/images/projects/img-23-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-24-lg.jpeg")
-                            img(src="assets/images/projects/img-24-sm.jpeg", alt="")
-                    li
-                        a(href="assets/images/projects/img-25-lg.jpeg")
-                            img(src="assets/images/projects/img-25-sm.jpeg", alt="")
-            div.img__lightbox
-                div.overlay
-                span.prev ← 
-                figure
-                    img(src="#", alt="")
-                span.next  →
-        div.projects__footer
-             include ../common/footer
+    div.main-wrapper
+        div.m-menu-wrapper
+            include ../common/menu/menu_mobile/menu_mobile
+        section.projects.grid
+            div.projects__header
+                include ../common/header__top/header__top
+            div.projects__content.container.grid
+                div.projects__content__gallery
+                    div.projects__content__title.md-title
+                        h2 Проекты
+                    ul.img__list
+                        li
+                            a(href="assets/images/projects/img-2-lg.jpg")
+                                img(src="assets/images/projects/img-2-sm.jpg", alt="")
+                        li
+                            a(href="assets/images/projects/img-4-lg.jpeg")
+                                img(src="assets/images/projects/img-4-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-5-lg.jpeg")
+                                img(src="assets/images/projects/img-5-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-6-lg.jpeg")
+                                img(src="assets/images/projects/img-6-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-7-lg.jpeg")
+                                img(src="assets/images/projects/img-7-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-9-lg.jpeg")
+                                img(src="assets/images/projects/img-9-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-10-lg.jpeg")
+                                img(src="assets/images/projects/img-10-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-12-lg.jpg")
+                                img(src="assets/images/projects/img-12-sm.jpg", alt="")
+                        li
+                            a(href="assets/images/projects/img-13-lg.jpg")
+                                img(src="assets/images/projects/img-13-sm.jpg", alt="")
+                        li
+                            a(href="assets/images/projects/img-14-lg.jpeg")
+                                img(src="assets/images/projects/img-14-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-15-lg.jpg")
+                                img(src="assets/images/projects/img-15-sm.jpg", alt="")
+                        li
+                            a(href="assets/images/projects/img-16-lg.jpeg")
+                                img(src="assets/images/projects/img-16-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-18-lg.jpeg")
+                                img(src="assets/images/projects/img-18-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-19-lg.jpeg")
+                                img(src="assets/images/projects/img-19-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-20-lg.jpeg")
+                                img(src="assets/images/projects/img-20-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-21-lg.jpeg")
+                                img(src="assets/images/projects/img-21-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-22-lg.jpeg")
+                                img(src="assets/images/projects/img-22-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-23-lg.jpeg")
+                                img(src="assets/images/projects/img-23-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-24-lg.jpeg")
+                                img(src="assets/images/projects/img-24-sm.jpeg", alt="")
+                        li
+                            a(href="assets/images/projects/img-25-lg.jpeg")
+                                img(src="assets/images/projects/img-25-sm.jpeg", alt="")
+                div.img__lightbox
+                    div.overlay
+                    span.prev ← 
+                    figure
+                        img(src="#", alt="")
+                    span.next  →
+            div.projects__footer
+                include ../common/footer

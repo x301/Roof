@@ -18,10 +18,12 @@ html(lang="ru-RU")
         script(src="https://kit.fontawesome.com/c643d1c7c0.js")
         title Ремонт мягкой кровли в Москве и Московской области   
     body
+        div.callback-form.callback-form_hidden
+            include ../common/callback__form/callback__form__call
         div.main-wrapper
             div.m-menu-wrapper
                 include ../common/menu/menu_mobile/menu_mobile 
-            div.services.grid
+            div.services.content.grid
                 div.services__header.grid
                     include ../common/header__top/header__top
                 div.service__content.grid.container
@@ -74,7 +76,6 @@ html(lang="ru-RU")
                             p Уборка снега с крыш - сезонная услуга. Работа производится силами квалифицированных альпинистов . Уборка кровли от снега, удаление сосулек и наледи выполняется оперативно и качественно.
                 div.footer
                     include ../common/footer
-            block scripts
-                script(src="assets/scripts/services.bundle.js")
-                script(src="assets/scripts/index.bundle.js")
-                script(src="assets/scripts/common.bundle.js")
+        block scripts
+            script(src="assets/scripts/index.bundle.js")
+            script(src="assets/scripts/common.bundle.js")

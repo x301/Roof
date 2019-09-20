@@ -1,6 +1,7 @@
 import "inputmask/dist/min/jquery.inputmask.bundle.min";
 import "./modules/gallery.js";
 import "./modules/callback.js";
+import "./services.js";
 
 $(".m-menu__btn").on("click", function(e) {
   e.preventDefault();

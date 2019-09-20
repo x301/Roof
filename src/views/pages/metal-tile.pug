@@ -16,13 +16,15 @@ html(lang="ru-RU")
         link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
         script(src="https://kit.fontawesome.com/c643d1c7c0.js")
         title Ремонт мягкой кровли в Москве и Московской области   
-    body 
+    body
+        div.callback-form.callback-form_hidden
+            include ../common/callback__form/callback__form__call 
         div.order-overlay.callback-form_hidden
             include ../common/callback__form/callback__form_service-order
         div.main-wrapper
             div.m-menu-wrapper
                 include ../common/menu/menu_mobile/menu_mobile 
-            div.services-pages.grid
+            div.services-pages.content.grid
                 div.services-pages__head
                     include ../common/header__top/header__top
                 div.services-pages__content.grid.container
@@ -37,7 +39,7 @@ html(lang="ru-RU")
                             p Металлочерепица - это наиболее распространенный кровельный материал для покрытия крыши в малоэтажном строительстве. Она встречается сегодня чаще других, благодаря таким качествам, как относительно невысокая цена и легкость установки. Конструкция имеет небольшой вес, что также в самом прямом смысле влияет на ее окончательную стоимость.
                         div.order.grid
                             include ../common/service-order/service-order
-                        div.content
+                        div.services-pages__main__content
                             h2 Преимущества металочерепицы:
                             ul
                                 li возможность использования в любых климатических условиях
@@ -62,6 +64,5 @@ html(lang="ru-RU")
                 div.footer
                     include ../common/footer
         block scripts
-            script(src="assets/scripts/services.bundle.js")
             script(src="assets/scripts/index.bundle.js")
             script(src="assets/scripts/common.bundle.js")

@@ -3,8 +3,7 @@ const webpack = require("webpack");
 const config = {
   mode: "production",
   entry: {
-    index: "./src/assets/scripts/index.js",
-    services: "./src/assets/scripts/services.js"
+    index: "./src/assets/scripts/index.js"
   },
   output: {
     filename: "[name].bundle.js"

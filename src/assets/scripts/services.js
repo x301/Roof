@@ -1,5 +1,4 @@
 import "./modules/service-order.js";
-//import "./modules/menu__vertical";
 $("#menu__vertical ul > li > .menu ").click(function(e) {
   if (
     $(this)
