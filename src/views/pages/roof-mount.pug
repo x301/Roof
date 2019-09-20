@@ -19,36 +19,39 @@ html(lang="ru-RU")
     body 
         div.order-overlay.callback-form_hidden
             include ../common/callback__form/callback__form_service-order
-        div.services-pages.grid
-            div.services-pages__head
-                 include ../common/header__top/header__top
-            div.services-pages__content.grid.container
-                 div.services-pages__title.service-name.md-title
-                     h2 Монтаж наплавляемой кровли
-                 div.services-pages__navbar
-                     include ../common/menu/menu__vertical/menu__vertical
-                 div.services-pages__main.grid
-                     div.services-pages__main__img-container
-                        img(src="assets/images/service-4.jpg", alt="")
-                     header
-                         p Компания «МосКровСервис» предлагает услугу монтажа наплавляемой кровли. Этот тип покрытия подразумевает расплавление нижнего битумного слоя материала для надежного и быстрого сцепления с основанием крыши. Наши специалисты работают со специальными кровельными горелкамию.
-                     div.order.grid
-                         include ../common/service-order/service-order
-                     div.content
-                         h2 Преимущества наплавляемой кровли:
-                         ul
-                             li материал устойчив к гниению
-                             li рулонные покрытия устойчивы к ультрафиолету, климатическим воздействиям, температурным перепадам
-                             li отличные показатели паро- и водонепроницаемости позволяют использовать полотна для устройства изоляционного слоя
-                             li такое покрытие отличается длительным сроком службы
-                         div.content__right.grid
-                             h2 Особенности монтажа наплавляемой кровли
-                             div.content__right__text
-                                 img(src="assets/images/about-1.png", alt="")
-                                 p Перед началом работ производятся замеры крыши, затем рассчитывается необходимое количество материала. Обязательно выполняется предварительная подготовка основания, на которое выполняется укладка полотна. Требуется строго соблюдать технологию монтажа наплавляемой кровли и контролировать качество всех процессов, чтобы избежать появления дефектов в дальнейшем. Монтаж наплавляемой кровли осуществляется в любое время года, для этого используется специальное оборудование.
-                             
-            div.footer
-                include ../common/footer
+        div.main-wrapper
+            div.m-menu-wrapper
+                include ../common/menu/menu_mobile/menu_mobile 
+            div.services-pages.grid
+                div.services-pages__head
+                    include ../common/header__top/header__top
+                div.services-pages__content.grid.container
+                    div.services-pages__title.service-name.md-title
+                        h2 Монтаж наплавляемой кровли
+                    div.services-pages__navbar
+                        include ../common/menu/menu__vertical/menu__vertical
+                    div.services-pages__main.grid
+                        div.services-pages__main__img-container
+                            img(src="assets/images/service-4.jpg", alt="")
+                        header
+                            p Компания «МосКровСервис» предлагает услугу монтажа наплавляемой кровли. Этот тип покрытия подразумевает расплавление нижнего битумного слоя материала для надежного и быстрого сцепления с основанием крыши. Наши специалисты работают со специальными кровельными горелкамию.
+                        div.order.grid
+                            include ../common/service-order/service-order
+                        div.content
+                            h2 Преимущества наплавляемой кровли:
+                            ul
+                                li материал устойчив к гниению
+                                li рулонные покрытия устойчивы к ультрафиолету, климатическим воздействиям, температурным перепадам
+                                li отличные показатели паро- и водонепроницаемости позволяют использовать полотна для устройства изоляционного слоя
+                                li такое покрытие отличается длительным сроком службы
+                            div.content__right.grid
+                                h2 Особенности монтажа наплавляемой кровли
+                                div.content__right__text
+                                    img(src="assets/images/about-1.png", alt="")
+                                    p Перед началом работ производятся замеры крыши, затем рассчитывается необходимое количество материала. Обязательно выполняется предварительная подготовка основания, на которое выполняется укладка полотна. Требуется строго соблюдать технологию монтажа наплавляемой кровли и контролировать качество всех процессов, чтобы избежать появления дефектов в дальнейшем. Монтаж наплавляемой кровли осуществляется в любое время года, для этого используется специальное оборудование.
+                                
+                div.footer
+                    include ../common/footer
         block scripts
             script(src="assets/scripts/services.bundle.js")
             script(src="assets/scripts/index.bundle.js")

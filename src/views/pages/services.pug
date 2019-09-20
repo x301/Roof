@@ -17,61 +17,64 @@ html(lang="ru-RU")
         link(rel="stylesheet", href="assets/styles/main.min.css" type="text/css")
         script(src="https://kit.fontawesome.com/c643d1c7c0.js")
         title Ремонт мягкой кровли в Москве и Московской области   
-    body 
-        div.services.grid
-             div.services__header.grid
-                 include ../common/header__top/header__top
-             div.service__content.grid.container
-                 div.services__page-title.md-title
-                     h2 Услуги
-                 div.services__navbar.grid
-                     include ../common/menu/menu__vertical/menu__vertical
-                 div.services__main.grid
-                     div.services__work.grid
-                         div.sevices__work_left
-                             img(src="assets/images/about-1.png", alt="")
-                         div.sevices__work_right
-                             h3 Наплавляемая кровля
-                             ul
-                                 li 
-                                     a(href="roof-repair.html") Ремонт кровли
-                                 li
-                                     a(href="roof-mount.html") Монтаж кровли
-                         p Наплавляемая кровля — это мягкое кровельное покрытие, которое монтируется с применением газовой горелки путем подачи пламени в место сплавления и раскатки битумного рулонного материала.
-                     div.services__work.grid
-                         div.sevices__work_left
-                             img(src="assets/images/metal-tile-1.jpg", alt="")
-                         div.sevices__work_right
-                             h3 Черепица
-                             ul
-                                 li
-                                     a(href="metal-tile.html") Металочерепица
-                                 li
-                                     a(href="flexible-tile.html") Гибкая черепица
-                         p Наплавляемая кровля — это мягкое кровельное покрытие, которое монтируется с применением газовой горелки путем подачи пламени в место сплавления и раскатки битумного рулонного материала.
-                     div.services__work.grid
-                         div.sevices__work_left
-                             img(src="assets/images/waterproofing-spray-2.jpg", alt="")
-                         div.sevices__work_right
-                             h3 Гидроизоляция
-                             ul
-                                 li
-                                     a(href="waterproofing-spray.html") Напыляемая гидроизоляция
-                                 li
-                                     a(href="roof-waterproofing.html") Наплавляемая гидроизоляция
-                         p Гидроизоляция кровли – необходимая мера, которая выполняет важную функцию: предохраняет кровлю от разрушительного влияния атмосферной влаги и различных водных растворов.
-                     div.services__work.grid
-                         div.sevices__work_left
-                             img(src="assets/images/service-2.jpg", alt="")
-                         div.sevices__work_right
-                             h3 Уборка снега
-                             ul
-                                 li
-                                     a(href="clean.html") Уборка снега с крыш
-                         p Уборка снега с крыш - сезонная услуга. Работа производится силами квалифицированных альпинистов . Уборка кровли от снега, удаление сосулек и наледи выполняется оперативно и качественно.
-             div.footer
-                include ../common/footer
-        block scripts
-            script(src="assets/scripts/services.bundle.js")
-            script(src="assets/scripts/index.bundle.js")
-            script(src="assets/scripts/common.bundle.js")
+    body
+        div.main-wrapper
+            div.m-menu-wrapper
+                include ../common/menu/menu_mobile/menu_mobile 
+            div.services.grid
+                div.services__header.grid
+                    include ../common/header__top/header__top
+                div.service__content.grid.container
+                    div.services__page-title.md-title
+                        h2 Услуги
+                    div.services__navbar.grid
+                        include ../common/menu/menu__vertical/menu__vertical
+                    div.services__main.grid
+                        div.services__work.grid
+                            div.sevices__work_left
+                                img(src="assets/images/about-1.png", alt="")
+                            div.sevices__work_right
+                                h3 Наплавляемая кровля
+                                ul
+                                    li 
+                                        a(href="roof-repair.html") Ремонт кровли
+                                    li
+                                        a(href="roof-mount.html") Монтаж кровли
+                            p Наплавляемая кровля — это мягкое кровельное покрытие, которое монтируется с применением газовой горелки путем подачи пламени в место сплавления и раскатки битумного рулонного материала.
+                        div.services__work.grid
+                            div.sevices__work_left
+                                img(src="assets/images/metal-tile-1.jpg", alt="")
+                            div.sevices__work_right
+                                h3 Черепица
+                                ul
+                                    li
+                                        a(href="metal-tile.html") Металочерепица
+                                    li
+                                        a(href="flexible-tile.html") Гибкая черепица
+                            p Наплавляемая кровля — это мягкое кровельное покрытие, которое монтируется с применением газовой горелки путем подачи пламени в место сплавления и раскатки битумного рулонного материала.
+                        div.services__work.grid
+                            div.sevices__work_left
+                                img(src="assets/images/waterproofing-spray-2.jpg", alt="")
+                            div.sevices__work_right
+                                h3 Гидроизоляция
+                                ul
+                                    li
+                                        a(href="waterproofing-spray.html") Напыляемая гидроизоляция
+                                    li
+                                        a(href="roof-waterproofing.html") Наплавляемая гидроизоляция
+                            p Гидроизоляция кровли – необходимая мера, которая выполняет важную функцию: предохраняет кровлю от разрушительного влияния атмосферной влаги и различных водных растворов.
+                        div.services__work.grid
+                            div.sevices__work_left
+                                img(src="assets/images/service-2.jpg", alt="")
+                            div.sevices__work_right
+                                h3 Уборка снега
+                                ul
+                                    li
+                                        a(href="clean.html") Уборка снега с крыш
+                            p Уборка снега с крыш - сезонная услуга. Работа производится силами квалифицированных альпинистов . Уборка кровли от снега, удаление сосулек и наледи выполняется оперативно и качественно.
+                div.footer
+                    include ../common/footer
+            block scripts
+                script(src="assets/scripts/services.bundle.js")
+                script(src="assets/scripts/index.bundle.js")
+                script(src="assets/scripts/common.bundle.js")

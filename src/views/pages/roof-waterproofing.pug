@@ -19,38 +19,42 @@ html(lang="ru-RU")
     body 
         div.order-overlay.callback-form_hidden
             include ../common/callback__form/callback__form_service-order
-        div.services-pages.grid
-            div.services-pages__head
-                 include ../common/header__top/header__top
-            div.services-pages__content.grid.container
-                 div.services-pages__title.service-name.service-name.md-title
-                     h2 Наплавляемая гидроизоляция
-                 div.services-pages__navbar
-                     include ../common/menu/menu__vertical/menu__vertical
-                 div.services-pages__main.grid
-                     div.services-pages__main__img-container
-                         img(src="assets/images/about-1.png", alt="")
-                     header
-                         p Гидроизоляция кровли – необходимая мера, которая выполняет важную функцию: предохраняет кровлю от разрушительного влияния атмосферной влаги и различных водных растворов. Если не провести работы по гидроизоляции вовремя, то атмосферные осадки могут спровоцировать быстрый износ кровельного покрова, что сократит срок службы всей крыши. Если не сделать своевременную гидроизоляцию, придется проводить ремонт всей кровли.
-                     div.order.grid
-                         include ../common/service-order/service-order
-                     div.content
-                         h2 Монтаж наплавляемой гидроизоляции кровли
-                         ul
-                             li Поверхность рулона разогревают горелкой
-                             li Рулон раскатывают
-                             li Такое покрытие отличается длительным сроком службы
-                         div.content__right.grid
-                             h2 Преимущества наплавляемой гидроизоляции
-                             div.content__right__text
-                                 img(src="assets/images/about-1.png", alt="")
-                                 ul
-                                     li Наплавляемая гидроизоляция  надежно защищает от влаги и внешних шумов
-                                     li Современная мягкая рулонная кровля экологически безопасна и соответствует нормам противопожарной безопасности
-                                     li Высокие показатели наплавляемой кровли актуальны и выгодны
-                             
-            div.footer
-                include ../common/footer
+        div.main-wrapper
+            div.m-menu-wrapper
+                include ../common/menu/menu_mobile/menu_mobile 
+            div.services-pages.grid
+                div.services-pages__head
+                    include ../common/header__top/header__top
+                div.services-pages__content.grid.container
+                    div.services-pages__title.service-name.service-name.md-title
+                        h2 Наплавляемая гидроизоляция
+                    div.services-pages__navbar
+                        include ../common/menu/menu__vertical/menu__vertical
+                    div.services-pages__main.grid
+                        div.services-pages__main__img-container
+                            img(src="assets/images/about-1.png", alt="")
+                        header
+                            p Гидроизоляция кровли – необходимая мера, которая выполняет важную функцию: предохраняет кровлю от разрушительного влияния атмосферной влаги и различных водных растворов. Если не провести работы по гидроизоляции вовремя, то атмосферные осадки могут спровоцировать быстрый износ кровельного покрова, что сократит срок службы всей крыши. Если не сделать своевременную гидроизоляцию, придется проводить ремонт всей кровли.
+                        div.order.grid
+                            include ../common/service-order/service-order
+                        div.content
+                            h2 Монтаж наплавляемой гидроизоляции кровли
+                            ul
+                                li Поверхность рулона разогревают горелкой
+                                li Рулон раскатывают
+                                li Такое покрытие отличается длительным сроком службы
+                            div.content__right.grid
+                                h2 Преимущества наплавляемой гидроизоляции:
+                                div.content__right__text
+                                    img(src="assets/images/roof-waterproofing-4.jpg", alt="")
+                                    p Наплавляемая гидроизоляция  надежно защищает от влаги и внешних шумов
+                                    br
+                                    p Современная мягкая рулонная кровля экологически безопасна и соответствует нормам противопожарной безопасности
+                                    br
+                                    p Высокие показатели наплавляемой кровли актуальны и выгодны
+                                
+                div.footer
+                    include ../common/footer
         block scripts
             script(src="assets/scripts/services.bundle.js")
             script(src="assets/scripts/index.bundle.js")

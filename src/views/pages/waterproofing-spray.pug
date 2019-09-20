@@ -19,39 +19,41 @@ html(lang="ru-RU")
     body 
         div.order-overlay.callback-form_hidden
             include ../common/callback__form/callback__form_service-order
-        div.services-pages.grid
-            div.services-pages__head
-                 include ../common/header__top/header__top
-            div.services-pages__content.grid.container
-                 div.services-pages__title.service-name.md-title
-                     h2 Напыляемая гидроизоляция кровли
-                 div.services-pages__navbar
-                     include ../common/menu/menu__vertical/menu__vertical
-                 div.services-pages__main.grid
-                     div.services-pages__main__img-container
-                         img(src="assets/images/waterproofing-spray-2.jpg", alt="")
-                     header
-                         p Одной из самых современных и востребованных технологий для защиты конструкций и бесшовной изоляционной облицовке являются полимочевинные (поликарбомидные) покрытия, непревзойденная гибкость которых, делает возможным получение прочных, долговечных и безопасных покрытий.
-                     div.order.grid
-                         include ../common/service-order/service-order
-                     div.content
-                         h2 Преимущества напыляемой кровли:
-                         ul
-                             li жидкий материал заполняет все дефекты и трещины поверхности
-                             li высокая адгезия к любому основанию
-                             li простота нанесения на объекты любой формы ( в том числе необычные геометрические конструкции)
-                             li не впитывает и не удерживает влагу
-                             li возможность применения в условиях высокой относительной влажности воздуха (до 98%)
-                         div.content__right.grid
-                             h2 Особенности монтажа напыляемой кровли
-                             div.content__right__text
-                                 img(src="assets/images/about-1.png", alt="")
-                                 p При монтаже кровли с помощью жидкого материала необходимо учитывать функциональную нагрузку крыши. От этого зависит количество слоев и толщина нанесения покрытия. Провести все работы правильно могут только профессионалы, поэтому советуем Вам при установке кровельных материалов всегда обращаться за помощью к квалифицированным специалистам.
-                             
-                         br
-                         p Опытные специалисты компании "МосКровСервис" предоставят полный комплекс необходимых услуг. 
-            div.footer
-                include ../common/footer
+        div.main-wrapper
+            div.m-menu-wrapper
+                include ../common/menu/menu_mobile/menu_mobile 
+            div.services-pages.grid
+                div.services-pages__head
+                    include ../common/header__top/header__top
+                div.services-pages__content.grid.container
+                    div.services-pages__title.service-name.md-title
+                        h2 Напыляемая гидроизоляция кровли
+                    div.services-pages__navbar
+                        include ../common/menu/menu__vertical/menu__vertical
+                    div.services-pages__main.grid
+                        div.services-pages__main__img-container
+                            img(src="assets/images/waterproofing-spray-2.jpg", alt="")
+                        header
+                            p Одной из самых современных и востребованных технологий для защиты конструкций и бесшовной изоляционной облицовке являются полимочевинные (поликарбомидные) покрытия, непревзойденная гибкость которых, делает возможным получение прочных, долговечных и безопасных покрытий.
+                        div.order.grid
+                            include ../common/service-order/service-order
+                        div.content
+                            h2 Преимущества напыляемой кровли:
+                            ul
+                                li жидкий материал заполняет все дефекты и трещины поверхности
+                                li высокая адгезия к любому основанию
+                                li простота нанесения на объекты любой формы ( в том числе необычные геометрические конструкции)
+                                li не впитывает и не удерживает влагу
+                                li возможность применения в условиях высокой относительной влажности воздуха (до 98%)
+                            div.content__right.grid
+                                h2 Особенности монтажа напыляемой кровли
+                                div.content__text
+                                    p При монтаже кровли с помощью жидкого материала необходимо учитывать функциональную нагрузку крыши. От этого зависит количество слоев и толщина нанесения покрытия. Провести все работы правильно могут только профессионалы, поэтому советуем Вам при установке кровельных материалов всегда обращаться за помощью к квалифицированным специалистам.
+                                
+                            br
+                            p Опытные специалисты компании "МосКровСервис" предоставят полный комплекс необходимых услуг. 
+                div.footer
+                    include ../common/footer
         block scripts
              script(src="assets/scripts/services.bundle.js")
              script(src="assets/scripts/index.bundle.js")
