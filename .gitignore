@@ -3,3 +3,4 @@ node_modules
 .eslintrc
 dist
 yarn-error.log
+gulpfile.js
