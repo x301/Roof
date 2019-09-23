@@ -1,16 +1,14 @@
-export const orderSendBtn = function(data, btn, url) {
-  return $.ajax({
+export const orderSendBtn = function(data, form, url) {
+  $.ajax({
     url: url,
     type: "POST",
     cache: false,
-    data: data,
-    dataType: "html",
-    beforeSend: function() {
-      btn.prop("disabled", true);
-    },
-    success: function() {
-      alert("Ваша заявка принята");
-      btn.prop("disabled", false);
-    }
+    data: data
+  }).done(function() {
+    $(form)
+      .find("input")
+      .val("");
+    $(form).trigger("reset");
   });
+  return false;
 };

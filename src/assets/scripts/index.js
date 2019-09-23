@@ -5,47 +5,42 @@ import "./services.js";
 import { orderSendBtn } from "./modules/orderSend.js";
 
 //order send
-$("#sendOrder").on("click", function() {
-  let name = $("#input__order-name").val(),
-    phone = $("#input__order-phone")
-      .val()
-      .trim(),
-    $activeBtn = $("#sendOrder"),
-    url = "assets/ajax/order.php",
-    data = $(".callback__form__service-order").serialize();
+$(document).ready(function() {
+  $("#form-order").submit(function() {
+    let $activeForm = $("#form-order"),
+      data =
+        $("#form-order").serialize() +
+        "&serviceName=" +
+        $(".service-order__name")
+          .text()
+          .trim(),
+      url = "assets/ajax/tel-order.php";
 
-  if (name == "") {
-    return $("#input__order-name")
-      .next("label")
-      .addClass("errorInput");
-  } else if ((phone = "")) {
-    return $("#input__order-phone")
-      .next("label")
-      .addClass("errorInput");
-  }
-  orderSendBtn(data, $activeBtn, url);
-  
+    orderSendBtn(data, $activeForm, url);
+  });
 });
-//contact form sell
-$("#sendContactForm").on("click", function() {
-  let name = $("#input__contact-name").val(),
-    phone = $("#input__contact-phone")
-      .val()
-      .trim(),
-    $activeBtn = $("#sendContactForm"),
-    url = "assets/ajax/contactForm.php",
-    data = $(".contacts__content__feedback__form").serialize();
 
-  if (name == "") {
-    return $("#input__contact-name")
-      .next("label")
-      .addClass("errorInput");
-  } else if (phone = "") {
-    return $("#input__contact-phone")
-      .next("label")
-      .addClass("errorInput");
-  }
-  orderSendBtn(data, $activeBtn, url);
+//contact form send
+$(document).ready(function() {
+  $("#feedback__form").submit(function() {
+    let $activeForm = $("#feedback__form"),
+      data = $("#feedback__form").serialize(),
+      url = "assets/ajax/tel-callback.php";
+
+    orderSendBtn(data, $activeForm, url);
+  });
+});
+
+//callback form send
+$(document).ready(function() {
+  $("#callback-form").submit(function() {
+    let $activeForm = $("#callback-form"),
+      data = $("#callback-form").serialize(),
+      url = "assets/ajax/tel-callback.php";
+
+    orderSendBtn(data, $activeForm, url);
+  });
+});
 //mobile menu and submenu open and close.
 $(".m-menu__btn").on("click", function(e) {
   e.preventDefault();

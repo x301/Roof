@@ -1,13 +1,13 @@
-form.callback__form__service-order
+form.callback__form__service-order#form-order
     div.callback__form__service-order__text.md-title Оформить заявку:
     div.service-order__name
     br
     div.callback__form__service-order__input.grid
-        input(name="name" id="input__order-name" type="text"  required).input-text
+        input(name="name" id="input__order-name" type="text"  data-rule="name").input-text
         label(for="input__order-name")
             span Ваше имя:
     div.callback__form__service-order__input.grid
-        input(name="phone" type="text" id="input__order-phone"  required).input-text
+        input(name="phone" type="text" id="input__order-phone"  data-rule="phone").input-text
         label(for="input__order-phone")
             span Телефон:
     div.callback__form__service-order__license
@@ -21,15 +21,15 @@ form.callback__form__service-order
     div.callback__form__service-order__extra
         div.extra__wrapper.grid
             div.extra__input.grid
-                input(name="square" id="input__order-square" type="text" ).input-text
+                input(name="square" id="input__order-square" type="text" data-rule="number" ).input-text
                 label(for="input__square")
                     span Площадь м2:
             div.extra__input
-                input(name="corner" id="input__order-corner" type="text"  ).input-text
+                input(name="corner" id="input__order-corner" type="text" data-rule="number"  ).input-text
                 label(for="input__corner")
                     span Угол наклона:
             div.extra__input.grid
-                input(name="height" id="input__order-height" type="text"  ).input-text
+                input(name="height" id="input__order-height" type="text"   ).input-text
                 label(for="input__order-height")
                     span Кол-во этажей:
     

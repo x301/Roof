@@ -2,8 +2,8 @@
 $recepient = "info@moskrovservice.ru";
 $sitename = "MosKrovService";
 
-$name = trim($_POST[$name]);
-$phone = trim($_POST[$phone]);
+$name = trim($_POST['name']);
+$phone = trim($_POST['phone']);
 $square = trim($_POST["square"]);
 $corner = trim($_POST["corner"]);
 $height = trim($_POST["height"]);

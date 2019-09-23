@@ -11,7 +11,7 @@ block content
                          div.contacts__content__feedback__about
                               h2.mt-title Свяжитесь с нами
                               p Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и предложат оптимальное техническое решение.
-                         form.contacts__content__feedback__form.grid
+                         form.contacts__content__feedback__form#feedback__form.grid
                               div.feedback__form__left.grid
                                    div.feedback__block__input
                                         input(name="name" id="input__contact-name" type="text"  required).input-text
@@ -22,12 +22,12 @@ block content
                                         label(for="input__contact-phone")
                                              span Телефон:
                                    div.feedback__block__input
-                                        input(name="name" type="text" id="input__contacts-email"  ).input-text
+                                        input(name="email" type="text" id="input__contact-email"  ).input-text
                                         label(for="input__contacts-email")
                                              span Email:
                               div.feedback__form__right
                                    div.feedback__block__input
-                                        textarea(name="message" id="input__contact-message" type="text"  cols="43" rows="14" id="input__textarea" ).input-text
+                                        textarea(name="message" id="input__contact-message" type="text"  cols="43" rows="14"  ).input-text
                                         label(for="input__contact-message")
                                              span Сообщение:
                               div.feedback__block__input__licence
