@@ -2,7 +2,51 @@ import "inputmask/dist/min/jquery.inputmask.bundle.min";
 import "./modules/gallery.js";
 import "./modules/callback.js";
 import "./services.js";
+import { orderSendBtn } from "./modules/orderSend.js";
 
+//order send
+$("#sendOrder").on("click", function() {
+  let name = $("#input__order-name").val(),
+    phone = $("#input__order-phone")
+      .val()
+      .trim(),
+    $activeBtn = $("#sendOrder"),
+    url = "assets/ajax/order.php",
+    data = $(".callback__form__service-order").serialize();
+
+  if (name == "") {
+    return $("#input__order-name")
+      .next("label")
+      .addClass("errorInput");
+  } else if ((phone = "")) {
+    return $("#input__order-phone")
+      .next("label")
+      .addClass("errorInput");
+  }
+  orderSendBtn(data, $activeBtn, url);
+  
+});
+//contact form sell
+$("#sendContactForm").on("click", function() {
+  let name = $("#input__contact-name").val(),
+    phone = $("#input__contact-phone")
+      .val()
+      .trim(),
+    $activeBtn = $("#sendContactForm"),
+    url = "assets/ajax/contactForm.php",
+    data = $(".contacts__content__feedback__form").serialize();
+
+  if (name == "") {
+    return $("#input__contact-name")
+      .next("label")
+      .addClass("errorInput");
+  } else if (phone = "") {
+    return $("#input__contact-phone")
+      .next("label")
+      .addClass("errorInput");
+  }
+  orderSendBtn(data, $activeBtn, url);
+//mobile menu and submenu open and close.
 $(".m-menu__btn").on("click", function(e) {
   e.preventDefault();
   $(".m-menu-wrapper").toggleClass("m-menu-wrapper_active");
@@ -45,7 +89,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#contact_form").submit(function() {
-    $.ajax({
+    $ajax({
       type: "POST",
       url: "mail.php",
       data: $(this).serialize()

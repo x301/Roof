@@ -1,36 +1,36 @@
-div.callback__form__service-order
+form.callback__form__service-order
     div.callback__form__service-order__text.md-title Оформить заявку:
     div.service-order__name
     br
     div.callback__form__service-order__input.grid
-        input(name="name" id="input__name" type="text"  required).input-text
-        label(for="input__name")
+        input(name="name" id="input__order-name" type="text"  required).input-text
+        label(for="input__order-name")
             span Ваше имя:
     div.callback__form__service-order__input.grid
-        input(name="name" type="text" id="input__phone"  required).input-text
-        label(for="input__phone")
+        input(name="phone" type="text" id="input__order-phone"  required).input-text
+        label(for="input__order-phone")
             span Телефон:
     div.callback__form__service-order__license
         input(type="checkbox" id="  licence-1" checked) 
         label(for=" licence-1")
             a.license-detail(href="./license.html") Я согласен на обработку персональных данных
     div.callback__form__service-order__button
-        button.button__simple.button__simple_theme_green Подвердить
+        button.button__simple.button__simple_theme_green#sendOrder Подвердить
     
 
     div.callback__form__service-order__extra
         div.extra__wrapper.grid
             div.extra__input.grid
-                input(name="name" id="input__square" type="text" ).input-text
+                input(name="square" id="input__order-square" type="text" ).input-text
                 label(for="input__square")
                     span Площадь м2:
             div.extra__input
-                input(name="name" id="input__corner" type="text"  ).input-text
+                input(name="corner" id="input__order-corner" type="text"  ).input-text
                 label(for="input__corner")
                     span Угол наклона:
             div.extra__input.grid
-                input(name="name" id="input__height" type="text"  ).input-text
-                label(for="input__height")
+                input(name="height" id="input__order-height" type="text"  ).input-text
+                label(for="input__order-height")
                     span Кол-во этажей:
     
     div.callback__form__service-order__extra__button

@@ -35,6 +35,10 @@ const paths = {
   icons: {
     src: "./src/assets/fonts/**/*.*",
     dest: "./dist/assets/fonts/"
+  },
+  ajax: {
+    src: "./src/assets/ajax/**/*.*",
+    dest: "./dist/assets/ajax/"
   }
 };
 
@@ -117,6 +121,10 @@ function scripts() {
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
+function ajaxSend() {
+  return gulp.src(paths.ajax.src).pipe(gulp.dest(paths.ajax.dest));
+}
+
 exports.templates = templates;
 exports.scripts = scripts;
 exports.styles = styles;
@@ -129,7 +137,7 @@ gulp.task(
   "default",
   gulp.series(
     clean,
-    gulp.parallel(img, styles, icons, templates, scripts),
+    gulp.parallel(img, styles, icons, templates, scripts, ajaxSend),
     gulp.parallel(watch, browserSyncServer)
   )
 );

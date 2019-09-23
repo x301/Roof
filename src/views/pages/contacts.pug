@@ -11,30 +11,30 @@ block content
                          div.contacts__content__feedback__about
                               h2.mt-title Свяжитесь с нами
                               p Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и предложат оптимальное техническое решение.
-                         div.contacts__content__feedback__form.grid
+                         form.contacts__content__feedback__form.grid
                               div.feedback__form__left.grid
                                    div.feedback__block__input
-                                        input(name="name" id="input__name" type="text"  required).input-text
-                                        label(for="input__name")
+                                        input(name="name" id="input__contact-name" type="text"  required).input-text
+                                        label(for="input__contact-name")
                                              span Ваше имя:
                                    div.feedback__block__input
-                                        input(name="name" type="text" id="input__phone"  required).input-text
-                                        label(for="input__phone")
+                                        input(name="phone" type="text" id="input__contact-phone"  required).input-text
+                                        label(for="input__contact-phone")
                                              span Телефон:
                                    div.feedback__block__input
-                                        input(name="name" type="text" id="input__email"  ).input-text
-                                        label(for="input__email")
+                                        input(name="name" type="text" id="input__contacts-email"  ).input-text
+                                        label(for="input__contacts-email")
                                              span Email:
                               div.feedback__form__right
                                    div.feedback__block__input
-                                        textarea(name="message" type="text"  cols="43" rows="14" id="input__textarea" ).input-text
-                                        label(for="input__textarea")
+                                        textarea(name="message" id="input__contact-message" type="text"  cols="43" rows="14" id="input__textarea" ).input-text
+                                        label(for="input__contact-message")
                                              span Сообщение:
                               div.feedback__block__input__licence
                                    input(type="checkbox" id="licence-1" checked) 
                                    label(for="licence-1")
                                         a.license-detail(href="./license.html") Я согласен на обработку персональных данных
-                                   button.button__simple.button__simple_theme_green(type="submit") Отправить
+                                   button.button__simple.button__simple_theme_green#sendContactForm(type="submit") Отправить
                
                     div.contacts__content__feedback__info.grid
                          div.feedback__info__item.grid
