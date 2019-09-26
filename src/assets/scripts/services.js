@@ -25,13 +25,13 @@ $("#menu__vertical ul > li > .menu ").click(function(e) {
 //license agree
 $(".ch-agree").change(function() {
   if (this.checked) {
-    $("#btn-agree").prop("disabled", false);
+    $(".btn-agree").prop("disabled", false);
     $(this)
       .parent(".license")
       .find(".license__agree")
       .removeClass("license__agree_unchecked");
   } else {
-    $("#btn-agree").prop("disabled", true);
+    $(".btn-agree").prop("disabled", true);
     $(this)
       .parent(".license")
       .find(".license__agree")
