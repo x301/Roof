@@ -30,11 +30,13 @@ block content
                                         textarea(name="message" id="input__contact-message" type="text"  cols="43" rows="14"  ).input-text
                                         label(for="input__contact-message")
                                              span Сообщение:
-                              div.feedback__block__input__licence
-                                   input(type="checkbox" id="licence-1" checked) 
-                                   label(for="licence-1")
+                              div.feedback__block__input__licence.license
+                                   input.ch-agree(type="checkbox" id="license-1" checked) 
+                                   label(for="license-1")
                                         a.license-detail(href="./license.html") Я согласен на обработку персональных данных
-                                   button.button__simple.button__simple_theme_green#sendContactForm(type="submit") Отправить
+                                   br
+                                   span.license__agree * Согласитесь с условиями
+                                   button.button__simple.button__simple_theme_green#btn-agree(type="submit") Отправить
                
                     div.contacts__content__feedback__info.grid
                          div.feedback__info__item.grid
@@ -42,14 +44,14 @@ block content
                                    i.fas.fa-phone
                               div.feedback__info__item__text
                                    p.title Телефон:
-                                   p.text +7 (495) 142-53-05
+                                   a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05
 
                          div.feedback__info__item.grid
                               div.feedback__info__item__icon.grid
                                    i.fas.fa-envelope
                               div.feedback__info__item__text
                                    p.title E-mail:
-                                   p.text info@moskrovservice.ru
+                                   a.mail(href="mailto:info@moskrovservice.ru") info@moskrovservice.ru
                          div.feedback__info__item.grid
                               div.feedback__info__item__icon.grid
                                    i.fas.fa-clock

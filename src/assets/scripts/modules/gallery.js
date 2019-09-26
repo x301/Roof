@@ -8,18 +8,18 @@ let $li = $(".img__list").find("> li"),
   targetImg;
 
 //preload img
-var imgSources = [
-  "assets/images/projects/img-1-lg.jpg",
-  "assets/images/projects/img-2-lg.jpgg",
-  "assets/images/projects/img-3-lg.jpg",
-  "assets/images/projects/img-4-lg.jpg"
-];
+//var imgSources = [
+//"assets/images/projects/img-1-lg.jpg",
+//"assets/images/projects/img-2-lg.jpgg",
+//"assets/images/projects/img-3-lg.jpg",
+//"assets/images/projects/img-4-lg.jpg"
+//;
 
-var imgs = [];
-for (let i = 0; i < imgSources.length; i++) {
-  imgs[i] = new Image();
-  imgs[i].src = imgSources[i];
-}
+//var imgs = [];
+//for (let i = 0; i < imgSources.length; i++) {
+// imgs[i] = new Image();
+//imgs[i].src = imgSources[i];
+//}
 
 function getHref(index) {
   return $li

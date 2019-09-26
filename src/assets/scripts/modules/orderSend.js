@@ -1,3 +1,4 @@
+let $license = $(".license");
 export const orderSendBtn = function(data, form, url) {
   $.ajax({
     url: url,
