@@ -1,6 +1,7 @@
 import { openFormOverlay, closeFormOverlay } from "../index.js";
 
-let $callBtn = $(".header-back-call").find("button"),
+let $callBtn = $(".header__callback").find("button"),
+  $mobileCallBtn = $(".m-menu__callback-form").find("button"),
   $callFormOverlay = $(".callback-form"),
   $callForm = $(".callback__form__call");
 
@@ -10,4 +11,10 @@ $callBtn.click(function(e) {
 
 $(document).on("click", function(e) {
   closeFormOverlay(e, $callForm);
+});
+
+$mobileCallBtn.click(function(e) {
+  openFormOverlay($callFormOverlay, $callForm);
+  $(".m-menu-wrapper").toggleClass("m-menu-wrapper_active");
+  $(".content").toggleClass("content_active");
 });
