@@ -77,9 +77,10 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-  $("#input__contact-phone").inputmask("+7 (999)-999-99-99"); //static mask
-  $("#input__callback-phone").inputmask("+7 (999)-999-99-99"); //static mask
-  $("#input__order-phone").inputmask("+7 (999)-999-99-99"); //static mask
+  $("#input__contact-phone").inputmask("+7 (999)-999-99-99"); //contact phone mask
+  $("#input__contact-email").inputmask("email"); // email contacts mask
+  $("#input__callback-phone").inputmask("+7 (999)-999-99-99"); //callback phone mask
+  $("#input__order-phone").inputmask("+7 (999)-999-99-99"); //order phone mask
 });
 
 $(document).ready(function() {
