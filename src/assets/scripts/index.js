@@ -77,9 +77,9 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-  $("#input_phone").inputmask("+7 (999)-999-99-99"); //static mask
-  // $("#input_phone").inputmask({ mask: "(999) 999-9999" }); //specifying options
-  //$("#input_phone").inputmask("9-a{1,3}9{1,3}"); //mask with dynamic syntax
+  $("#input__contact-phone").inputmask("+7 (999)-999-99-99"); //static mask
+  $("#input__callback-phone").inputmask("+7 (999)-999-99-99"); //static mask
+  $("#input__order-phone").inputmask("+7 (999)-999-99-99"); //static mask
 });
 
 $(document).ready(function() {

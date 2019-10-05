@@ -12,7 +12,8 @@ const config = {
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
+      jQuery: "jquery",
+      inputmask: "inputmask"
     })
   ],
   module: {
