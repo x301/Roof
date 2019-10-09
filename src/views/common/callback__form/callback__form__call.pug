@@ -1,19 +1,21 @@
-form.callback__form__call#callback-form
-    div.call__text.md-title Заказать звонок
-    br
-    div.call__input.grid
-        input(name="name" id="input__callback-name" type="text"  required).input-text
-        label(for="input__name")
-            span Ваше имя:
-    div.call__input.grid
-        input(name="phone" type="text" id="input__callback-phone"  required).input-text
-        label(for="input__phone")
-            span Телефон:
-    div.call__license.license
-        input.ch-agree(type="checkbox" id="license-1" checked) 
-        label(for="license-1")
-            a.license-detail(href="./license.html") Я согласен на обработку персональных данных
+div.callback__form__call
+    form( method="post")#callback-form
+        div.call__text.md-title Заказать звонок
         br
-        span.license__agree * Согласитесь с условиями
-    div.call__button
-        button.button__simple.button__simple_theme_green.btn-agree Подвердить
+        div.call__input.grid
+            input(name="name" id="input__callback-name" type="text"  required).input-text
+            label(for="input__name")
+                span Ваше имя:
+        div.call__input.grid
+            input(name="phone" type="text" id="input__callback-phone"  required).input-text
+            label(for="input__phone")
+                span Телефон:
+        div.call__license.license
+            input.ch-agree(type="checkbox" id="license-1" checked) 
+            label(for="license-1")
+                a.license-detail(href="./license.html") Я согласен на обработку персональных данных
+            br
+            span.license__agree * Согласитесь с условиями
+        div.call__button
+            button.button__simple.button__simple_theme_green.btn-agree Подвердить
+    include ../response-to-user/confirmation

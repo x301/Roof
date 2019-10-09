@@ -11,33 +11,34 @@ block content
                          div.contacts__content__feedback__about
                               h2.mt-title Свяжитесь с нами
                               p Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и предложат оптимальное техническое решение.
-                         form.contacts__content__feedback__form#feedback__form.grid
-                              div.feedback__form__left.grid
-                                   div.feedback__block__input
-                                        input(name="name" id="input__contact-name" type="text"  required).input-text
-                                        label(for="input__contact-name")
-                                             span Ваше имя:
-                                   div.feedback__block__input
-                                        input(name="phone" type="text" id="input__contact-phone"  required).input-text
-                                        label(for="input__contact-phone")
-                                             span Телефон:
-                                   div.feedback__block__input
-                                        input(name="email" type="text" id="input__contact-email"  ).input-text
-                                        label(for="input__contacts-email")
-                                             span Email:
-                              div.feedback__form__right
-                                   div.feedback__block__input
-                                        textarea(name="message" id="input__contact-message" type="text"  cols="43" rows="14"  ).input-text
-                                        label(for="input__contact-message")
-                                             span Сообщение:
-                              div.feedback__block__input__licence.license
-                                   input.ch-agree(type="checkbox" id="license-1" checked) 
-                                   label(for="license-1")
-                                        a.license-detail(href="./license.html") Я согласен на обработку персональных данных
-                                   br
-                                   span.license__agree * Согласитесь с условиями
-                                   button.button__simple.button__simple_theme_green.btn-agree Отправить
-               
+                         div.contacts__content__feedback__wrapper
+                              form( method="post").contacts__content__feedback__form#feedback__form.grid
+                                   div.feedback__form__left.grid
+                                        div.feedback__block__input
+                                             input(name="name" id="input__contact-name" type="text" required).input-text
+                                             label(for="input__contact-name")
+                                                  span Ваше имя:
+                                        div.feedback__block__input
+                                             input(name="phone" type="text" id="input__contact-phone" required ).input-text
+                                             label(for="input__contact-phone")
+                                                  span Телефон:
+                                        div.feedback__block__input
+                                             input(name="email" type="text" id="input__contact-email"  ).input-text
+                                             label(for="input__contacts-email")
+                                                  span Email:
+                                   div.feedback__form__right
+                                        div.feedback__block__input
+                                             textarea(name="message" id="input__contact-message" type="text"  cols="43" rows="14"  ).input-text
+                                             label(for="input__contact-message")
+                                                  span Сообщение:
+                                   div.feedback__block__input__licence.license
+                                        input.ch-agree(type="checkbox" id="license-1" checked) 
+                                        label(for="license-1")
+                                             a.license-detail(href="./license.html") Я согласен на обработку персональных данных
+                                        br
+                                        span.license__agree * Согласитесь с условиями
+                                        button.button__simple.button__simple_theme_green.btn-agree Отправить
+                         include ../common/response-to-user/confirmation
                     div.contacts__content__feedback__info.grid
                          div.feedback__info__item.grid
                               div.feedback__info__item__icon.grid
@@ -58,7 +59,6 @@ block content
                               div.feedback__info__item__text
                                    p.title Режим работы:
                                    p.text С 9:00 до 22:00
-
-
+               
                div.projects__footer
                     include ../common/footer

@@ -6,10 +6,11 @@ let $callBtn = $(".header__callback").find("button"),
   $callForm = $(".callback__form__call");
 
 $callBtn.click(function(e) {
+  e.preventDefault();
   openFormOverlay($callFormOverlay, $callForm);
 });
 
-$(document).on("click", function(e) {
+$($callFormOverlay).on("click", function(e) {
   closeFormOverlay(e, $callForm);
 });
 

@@ -8,7 +8,8 @@ let $extraBtn = $(".callback__form__service-order__extra__button"),
   $serviceName = $(".service-name").text();
 
 //open overlay and form
-$serviceOrderBtn.click(function() {
+$serviceOrderBtn.click(function(e) {
+  e.preventDefault();
   openFormOverlay($orderOverlay, $formOrder);
   $formOrder.find(".service-order__name").text($serviceName);
 });
@@ -20,6 +21,6 @@ $extraBtn.click(function(e) {
 });
 
 //close form and overlay
-$(document).on("click", function(e) {
+$($orderOverlay).on("click", function(e) {
   closeFormOverlay(e, $formOrder);
 });

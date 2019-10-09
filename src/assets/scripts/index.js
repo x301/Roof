@@ -7,7 +7,7 @@ import { orderSendBtn } from "./modules/orderSend.js";
 //order send
 $(document).ready(function() {
   $("#form-order").submit(function() {
-    let $activeForm = $("#form-order"),
+    let form = $("#form-order"),
       data =
         $("#form-order").serialize() +
         "&serviceName=" +
@@ -16,7 +16,8 @@ $(document).ready(function() {
           .trim(),
       url = "assets/ajax/tel-order.php";
 
-    orderSendBtn(data, $activeForm, url);
+    orderSendBtn(data, form, url);
+    return false;
   });
 });
 
@@ -28,6 +29,7 @@ $(document).ready(function() {
       url = "assets/ajax/tel-callback.php";
 
     orderSendBtn(data, $activeForm, url);
+    return false;
   });
 });
 
@@ -39,6 +41,7 @@ $(document).ready(function() {
       url = "assets/ajax/tel-callback.php";
 
     orderSendBtn(data, $activeForm, url);
+    return false;
   });
 });
 //mobile menu and submenu open and close.
@@ -76,6 +79,7 @@ $(window).on("load", function() {
     .fadeOut("slow");
 });
 
+//input mask
 $(document).ready(function() {
   $("#input__contact-phone").inputmask("+7 (999)-999-99-99"); //contact phone mask
   $("#input__contact-email").inputmask("email"); // email contacts mask
@@ -83,39 +87,22 @@ $(document).ready(function() {
   $("#input__order-phone").inputmask("+7 (999)-999-99-99"); //order phone mask
 });
 
-$(document).ready(function() {
-  $("#contact_form").submit(function() {
-    $ajax({
-      type: "POST",
-      url: "mail.php",
-      data: $(this).serialize()
-    }).done(function() {
-      $(this)
-        .find("input")
-        .val("");
-      alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-      $("#contact_form").trigger("reset");
-    });
-    return false;
-  });
-});
-
 //open overlay and form
-
 export const openFormOverlay = function(overlay, form) {
   overlay.addClass("open");
   setTimeout(function() {
-    form.slideToggle("slow");
+    form.slideToggle();
   }, 500);
 };
 
 //close overlay and form
 export const closeFormOverlay = function(e, form) {
   let target = $(e.target);
+
   if ($(target).hasClass("open")) {
     setTimeout(function() {
       target.removeClass("open");
-    }, 1000);
-    form.slideToggle("slow");
+    }, 500);
+    form.slideToggle();
   }
 };
