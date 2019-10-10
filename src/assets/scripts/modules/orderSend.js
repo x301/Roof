@@ -3,13 +3,7 @@ export const orderSendBtn = function(data, activeForm, url) {
     url: url,
     type: "POST",
     data: data,
-    success: function() {
-      alert("Спасибо за заявку.Скоро мы с Вами свяжемся");
-      $(activeForm)
-        .find("input")
-        .val("");
-      $(activeForm).trigger("reset");
-    },
+    success: function() {},
     complete: function() {
       if ($(activeForm).hasClass("contacts__content__feedback__form")) {
         $(activeForm)
