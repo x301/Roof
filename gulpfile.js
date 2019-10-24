@@ -11,6 +11,7 @@ const browserSync = require("browser-sync").create();
 const imagemin = require("gulp-imagemin");
 const autoprefixer = require("gulp-autoprefixer");
 const gulpDeployFtp = require("vinyl-ftp");
+const serverConf =require("./deploy-server_config.js")
 
 const paths = {
   root: "./dist",
