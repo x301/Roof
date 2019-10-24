@@ -19,10 +19,10 @@ nav.m-menu.grid
       div.m-menu__callback-form.m-menu__main__items
          include ../../button/button__callback
    div.submenu.grid
-      div.menu_back 
-         i.fas.fa-long-arrow-alt-left
-         p Назад
-      div.submenu__title Услуги
+      div.submenu__title
+         button.submenu__btn_back
+            i.fas.fa-long-arrow-alt-left
+         a.submenu__items__services(href="./services.html") Услуги 
       div.submenu__items
          button.extramenu__btn Наплавляемая кровля 
          div.extramenu

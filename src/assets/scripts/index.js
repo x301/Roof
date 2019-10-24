@@ -56,7 +56,7 @@ $(".submenu__btn").on("click", function(e) {
   $(".m-menu__main").toggleClass("m-menu__main_hidden");
   $(".submenu").toggleClass("submenu_active");
 });
-$(".menu_back ").on("click", function(e) {
+$(".submenu__btn_back").on("click", function(e) {
   e.preventDefault();
   $(".m-menu__main").toggleClass("m-menu__main_hidden");
   $(".submenu").toggleClass("submenu_active");

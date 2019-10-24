@@ -34,6 +34,9 @@
     border-bottom: 1px solid rgba(0,0,0,.1)
     position: relative
     .submenu__btn
+        position: absolute
+        top: 0
+        right: 0
         height: 100%
         width: 30px
         background: inherit
@@ -49,16 +52,17 @@
 .submenu
     position: absolute
     top: 0
-    height: 100%
+    //height: 100%
     transform: translateX(-100%)
     width: 100%
     font-size: 18pt
     transition: 1s
-    grid-template-rows: 20px 30px 0fr 0fr 0fr 0fr
-    grid-row-gap: 2vh
 
     .submenu__items
+        display: grid
+        align-items: center
         width: 100%
+        min-height: 60px
         border-bottom: 1px solid rgba(0,0,0,.1)
         position: relative
         text-align: center
@@ -67,16 +71,34 @@
             color: black
             font-size: 14pt
             font-family: "Roboto-md"
-
-       
+            text-align: center
+    
     .submenu__title
-        color: Black
-        font-family: "Roboto-ld"
-        text-align: left
-        padding-left: 10px
+        position: relative
+        color: black
         background-color: #fbfbfb
         border-bottom: 1px solid rgba(0,0,0,.1)
-            
+        padding: 20px 20px
+        cursor: pointer
+        
+
+    .submenu__items__services
+        text-decoration: none
+        color: black
+        font-family: "Roboto-md"
+        text-align: center
+        font-size: 14pt
+        
+    .submenu__btn_back
+        position: absolute
+        top: 0
+        left: 1px
+        height: 100%
+        width: 30px
+        background: inherit
+        border: 1px solid rgba(0,0,0,.1)
+        border-top: none
+        border-bottom: none 
 
 .submenu_active
     transform: translateX(0%)
@@ -99,10 +121,7 @@
 
 
 .submenu__btn
-    position: absolute
-    top: 0
-    right: 0
-    height: 100%
+    
 
 .extramenu
     display: none
@@ -156,15 +175,7 @@
 
 .content_active
     transform: translateX(50%)
-.menu_back
-    text-align: left
-    height: 100%
-    width: 100%
-    padding: 0 15px
-    color: black
-    p
-        display: inline
-        font-family: "Roboto-md"
-        font-size: 14pt
 
+
+    
 
