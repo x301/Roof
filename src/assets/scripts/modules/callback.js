@@ -15,6 +15,9 @@ $($callFormOverlay).on("click", function(e) {
 });
 
 $mobileCallBtn.click(function(e) {
+   if ($(".m-menu__btn").hasClass("is-active")) {
+    $(".m-menu__btn").removeClass("is-active")
+   }
   openFormOverlay($callFormOverlay, $callForm);
   $(".m-menu-wrapper").toggleClass("m-menu-wrapper_active");
   $(".content").toggleClass("content_active");
