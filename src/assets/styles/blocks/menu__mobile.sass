@@ -28,7 +28,9 @@
     transform: translateX(130%)
 
 .m-menu__main__items
-    padding: 20px 20px
+    display: grid
+    align-content: center
+    height: 60px
     width: 100%
     font-size: 14pt
     border-bottom: 1px solid rgba(0,0,0,.1)
@@ -40,14 +42,13 @@
         height: 100%
         width: 30px
         background: inherit
-        border: 1px solid rgba(0,0,0,.1)
-        border-top: none
-        border-bottom: none 
-
+        border: none
+        border-left: 1px solid rgba(0,0,0,.1)
     a
         text-decoration: none
         color: black
         font-family: "Roboto-md"
+        height: 100%
 
 .submenu
     position: absolute
@@ -68,7 +69,7 @@
         a
             text-decoration: none
             color: black
-            font-size: 14pt
+            font-size: 12pt
             font-family: "Roboto-md"
             text-align: center
     
@@ -78,8 +79,7 @@
         background-color: #fbfbfb
         border-bottom: 1px solid rgba(0,0,0,.1)
         padding: 20px 20px
-        cursor: pointer
-        
+
 
     .submenu__items__services
         text-decoration: none
@@ -95,9 +95,9 @@
         height: 100%
         width: 30px
         background: inherit
-        border: 1px solid rgba(0,0,0,.1)
-        border-top: none
-        border-bottom: none 
+        border: none
+        border-right: 1px solid rgba(0,0,0,.1)
+        
 
 .submenu_active
     transform: translateX(0%)
@@ -130,7 +130,7 @@
     .extramenu__items
         text-align: center
         border-bottom: 1px solid rgba(0,0,0,.1)
-        padding: 7px 0
+        padding: 5px 0
         &:last-child
             border-bottom: none
 

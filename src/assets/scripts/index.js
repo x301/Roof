@@ -47,6 +47,7 @@ $(document).ready(function() {
 //mobile menu and submenu open and close.
 $(".m-menu__btn").on("click", function(e) {
   e.preventDefault();
+  $(".m-menu__btn").toggleClass("is-active");
   $(".m-menu-wrapper").toggleClass("m-menu-wrapper_active");
   $(".content").toggleClass("content_active");
 });
