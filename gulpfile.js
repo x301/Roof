@@ -48,7 +48,7 @@ function deploy() {
     host: "31.31.196.8",
     port: 21,
     user: "u0571017",
-    pass: "2_UeVtdA"
+    pass: "p_7Ke2Zz"
   });
   let globs = ["./dist/**"];
   return gulp
